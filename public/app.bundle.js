@@ -60,58 +60,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 43);
+/******/ 	return __webpack_require__(__webpack_require__.s = 42);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-if (true) {
-  module.exports = __webpack_require__(27);
-} else {
-  module.exports = require('./dist/react-hot-loader.development.js');
-}
-
-/***/ }),
-/* 1 */
 /***/ (function(module, exports) {
-
-module.exports = function (module) {
-	if (!module.webpackPolyfill) {
-		module.deprecate = function () {};
-		module.paths = [];
-		// module.parent = undefined by default
-		if (!module.children) module.children = [];
-		Object.defineProperty(module, "loaded", {
-			enumerable: true,
-			get: function get() {
-				return module.l;
-			}
-		});
-		Object.defineProperty(module, "id", {
-			enumerable: true,
-			get: function get() {
-				return module.i;
-			}
-		});
-		module.webpackPolyfill = 1;
-	}
-	return module;
-};
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-    var enterModule = __webpack_require__(0).enterModule;
-
-    enterModule && enterModule(module);
-})();
 
 // shim for using process in browser
 var process = module.exports = {};
@@ -298,49 +252,12 @@ process.chdir = function (dir) {
 process.umask = function () {
     return 0;
 };
-;
-
-(function () {
-    var reactHotLoader = __webpack_require__(0).default;
-
-    var leaveModule = __webpack_require__(0).leaveModule;
-
-    if (!reactHotLoader) {
-        return;
-    }
-
-    reactHotLoader.register(process, 'process', 'I:/Kodilla/Czat/node_modules/node-libs-browser/node_modules/process/browser.js');
-    reactHotLoader.register(cachedSetTimeout, 'cachedSetTimeout', 'I:/Kodilla/Czat/node_modules/node-libs-browser/node_modules/process/browser.js');
-    reactHotLoader.register(cachedClearTimeout, 'cachedClearTimeout', 'I:/Kodilla/Czat/node_modules/node-libs-browser/node_modules/process/browser.js');
-    reactHotLoader.register(defaultSetTimout, 'defaultSetTimout', 'I:/Kodilla/Czat/node_modules/node-libs-browser/node_modules/process/browser.js');
-    reactHotLoader.register(defaultClearTimeout, 'defaultClearTimeout', 'I:/Kodilla/Czat/node_modules/node-libs-browser/node_modules/process/browser.js');
-    reactHotLoader.register(runTimeout, 'runTimeout', 'I:/Kodilla/Czat/node_modules/node-libs-browser/node_modules/process/browser.js');
-    reactHotLoader.register(runClearTimeout, 'runClearTimeout', 'I:/Kodilla/Czat/node_modules/node-libs-browser/node_modules/process/browser.js');
-    reactHotLoader.register(queue, 'queue', 'I:/Kodilla/Czat/node_modules/node-libs-browser/node_modules/process/browser.js');
-    reactHotLoader.register(draining, 'draining', 'I:/Kodilla/Czat/node_modules/node-libs-browser/node_modules/process/browser.js');
-    reactHotLoader.register(currentQueue, 'currentQueue', 'I:/Kodilla/Czat/node_modules/node-libs-browser/node_modules/process/browser.js');
-    reactHotLoader.register(queueIndex, 'queueIndex', 'I:/Kodilla/Czat/node_modules/node-libs-browser/node_modules/process/browser.js');
-    reactHotLoader.register(cleanUpNextTick, 'cleanUpNextTick', 'I:/Kodilla/Czat/node_modules/node-libs-browser/node_modules/process/browser.js');
-    reactHotLoader.register(drainQueue, 'drainQueue', 'I:/Kodilla/Czat/node_modules/node-libs-browser/node_modules/process/browser.js');
-    reactHotLoader.register(Item, 'Item', 'I:/Kodilla/Czat/node_modules/node-libs-browser/node_modules/process/browser.js');
-    reactHotLoader.register(noop, 'noop', 'I:/Kodilla/Czat/node_modules/node-libs-browser/node_modules/process/browser.js');
-    leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
+/* 1 */
+/***/ (function(module, exports) {
 
-/* WEBPACK VAR INJECTION */(function(module) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function () {
-	var enterModule = __webpack_require__(0).enterModule;
-
-	enterModule && enterModule(module);
-})();
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var g;
 
@@ -362,44 +279,27 @@ try {
 // easier to handle this case. if(!global) { ...}
 
 module.exports = g;
-;
-
-(function () {
-	var reactHotLoader = __webpack_require__(0).default;
-
-	var leaveModule = __webpack_require__(0).leaveModule;
-
-	if (!reactHotLoader) {
-		return;
-	}
-
-	reactHotLoader.register(g, "g", "I:/Kodilla/Czat/node_modules/webpack/buildin/global.js");
-	leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 4 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(45);
+  module.exports = __webpack_require__(44);
 } else {
-  module.exports = __webpack_require__(46);
+  module.exports = __webpack_require__(45);
 }
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 5 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module, process) {/**
+/* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
@@ -419,12 +319,6 @@ if (process.env.NODE_ENV === 'production') {
  * The invariant message will be stripped in production, but the invariant
  * will remain to ensure logic does not differ in production.
  */
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 var validateFormat = function validateFormat(format) {};
 
@@ -458,31 +352,14 @@ function invariant(condition, format, a, b, c, d, e, f) {
 }
 
 module.exports = invariant;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(validateFormat, 'validateFormat', 'I:/Kodilla/Czat/node_modules/fbjs/lib/invariant.js');
-  reactHotLoader.register(invariant, 'invariant', 'I:/Kodilla/Czat/node_modules/fbjs/lib/invariant.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 6 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {
+
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -492,12 +369,6 @@ module.exports = invariant;
  *
  * 
  */
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 function makeEmptyFunction(arg) {
   return function () {
@@ -524,63 +395,11 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(makeEmptyFunction, "makeEmptyFunction", "I:/Kodilla/Czat/node_modules/fbjs/lib/emptyFunction.js");
-  reactHotLoader.register(emptyFunction, "emptyFunction", "I:/Kodilla/Czat/node_modules/fbjs/lib/emptyFunction.js");
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 7 */
-/***/ (function(module, exports) {
-
-module.exports = function (originalModule) {
-	if (!originalModule.webpackPolyfill) {
-		var module = Object.create(originalModule);
-		// module.parent = undefined by default
-		if (!module.children) module.children = [];
-		Object.defineProperty(module, "loaded", {
-			enumerable: true,
-			get: function get() {
-				return module.l;
-			}
-		});
-		Object.defineProperty(module, "id", {
-			enumerable: true,
-			get: function get() {
-				return module.i;
-			}
-		});
-		Object.defineProperty(module, "exports", {
-			enumerable: true
-		});
-		module.webpackPolyfill = 1;
-	}
-	return module;
-};
-
-/***/ }),
-/* 8 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 /**
  * Expose `Emitter`.
@@ -739,48 +558,24 @@ Emitter.prototype.listeners = function (event) {
 Emitter.prototype.hasListeners = function (event) {
   return !!this.listeners(event).length;
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(Emitter, 'Emitter', 'I:/Kodilla/Czat/node_modules/component-emitter/index.js');
-  reactHotLoader.register(mixin, 'mixin', 'I:/Kodilla/Czat/node_modules/component-emitter/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 9 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, global) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-/**
+/* WEBPACK VAR INJECTION */(function(global) {/**
  * Module dependencies.
  */
 
-var keys = __webpack_require__(77);
-var hasBinary = __webpack_require__(37);
-var sliceBuffer = __webpack_require__(78);
-var after = __webpack_require__(79);
-var utf8 = __webpack_require__(80);
+var keys = __webpack_require__(76);
+var hasBinary = __webpack_require__(36);
+var sliceBuffer = __webpack_require__(77);
+var after = __webpack_require__(78);
+var utf8 = __webpack_require__(79);
 
 var base64encoder;
 if (global && global.ArrayBuffer) {
-  base64encoder = __webpack_require__(81);
+  base64encoder = __webpack_require__(80);
 }
 
 /**
@@ -838,7 +633,7 @@ var err = { type: 'error', data: 'parser error' };
  * Create a blob api even for blob builder when vendor prefixes exist
  */
 
-var Blob = __webpack_require__(82);
+var Blob = __webpack_require__(81);
 
 /**
  * Encodes a packet.
@@ -1372,42 +1167,14 @@ exports.decodePayloadAsBinary = function (data, binaryType, callback) {
     callback(exports.decodePacket(buffer, binaryType, true), i, total);
   });
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(base64encoder, 'base64encoder', 'I:/Kodilla/Czat/node_modules/engine.io-parser/lib/browser.js');
-  reactHotLoader.register(isAndroid, 'isAndroid', 'I:/Kodilla/Czat/node_modules/engine.io-parser/lib/browser.js');
-  reactHotLoader.register(isPhantomJS, 'isPhantomJS', 'I:/Kodilla/Czat/node_modules/engine.io-parser/lib/browser.js');
-  reactHotLoader.register(dontSendBlobs, 'dontSendBlobs', 'I:/Kodilla/Czat/node_modules/engine.io-parser/lib/browser.js');
-  reactHotLoader.register(packets, 'packets', 'I:/Kodilla/Czat/node_modules/engine.io-parser/lib/browser.js');
-  reactHotLoader.register(packetslist, 'packetslist', 'I:/Kodilla/Czat/node_modules/engine.io-parser/lib/browser.js');
-  reactHotLoader.register(err, 'err', 'I:/Kodilla/Czat/node_modules/engine.io-parser/lib/browser.js');
-  reactHotLoader.register(encodeBase64Object, 'encodeBase64Object', 'I:/Kodilla/Czat/node_modules/engine.io-parser/lib/browser.js');
-  reactHotLoader.register(encodeArrayBuffer, 'encodeArrayBuffer', 'I:/Kodilla/Czat/node_modules/engine.io-parser/lib/browser.js');
-  reactHotLoader.register(encodeBlobAsArrayBuffer, 'encodeBlobAsArrayBuffer', 'I:/Kodilla/Czat/node_modules/engine.io-parser/lib/browser.js');
-  reactHotLoader.register(encodeBlob, 'encodeBlob', 'I:/Kodilla/Czat/node_modules/engine.io-parser/lib/browser.js');
-  reactHotLoader.register(tryDecode, 'tryDecode', 'I:/Kodilla/Czat/node_modules/engine.io-parser/lib/browser.js');
-  reactHotLoader.register(map, 'map', 'I:/Kodilla/Czat/node_modules/engine.io-parser/lib/browser.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 10 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/*
+/*
 object-assign
 (c) Sindre Sorhus
 @license MIT
@@ -1415,12 +1182,6 @@ object-assign
 
 
 /* eslint-disable no-unused-vars */
-
-(function () {
-	var enterModule = __webpack_require__(0).enterModule;
-
-	enterModule && enterModule(module);
-})();
 
 var getOwnPropertySymbols = Object.getOwnPropertySymbols;
 var hasOwnProperty = Object.prototype.hasOwnProperty;
@@ -1503,643 +1264,10 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 	return to;
 };
-;
-
-(function () {
-	var reactHotLoader = __webpack_require__(0).default;
-
-	var leaveModule = __webpack_require__(0).leaveModule;
-
-	if (!reactHotLoader) {
-		return;
-	}
-
-	reactHotLoader.register(getOwnPropertySymbols, 'getOwnPropertySymbols', 'I:/Kodilla/Czat/node_modules/object-assign/index.js');
-	reactHotLoader.register(hasOwnProperty, 'hasOwnProperty', 'I:/Kodilla/Czat/node_modules/object-assign/index.js');
-	reactHotLoader.register(propIsEnumerable, 'propIsEnumerable', 'I:/Kodilla/Czat/node_modules/object-assign/index.js');
-	reactHotLoader.register(toObject, 'toObject', 'I:/Kodilla/Czat/node_modules/object-assign/index.js');
-	reactHotLoader.register(shouldUseNative, 'shouldUseNative', 'I:/Kodilla/Czat/node_modules/object-assign/index.js');
-	leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(module, process) {/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- */
-
-
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-var emptyObject = {};
-
-if (process.env.NODE_ENV !== 'production') {
-  Object.freeze(emptyObject);
-}
-
-module.exports = emptyObject;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(emptyObject, 'emptyObject', 'I:/Kodilla/Czat/node_modules/fbjs/lib/emptyObject.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(2)))
-
-/***/ }),
-/* 12 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(module, process) {/**
- * Copyright (c) 2014-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- */
-
-
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-var emptyFunction = __webpack_require__(6);
-
-/**
- * Similar to invariant but only logs a warning if the condition is not met.
- * This can be used to log issues in development environments in critical
- * paths. Removing the logging code for production environments will keep the
- * same logic and follow the same code paths.
- */
-
-var warning = emptyFunction;
-
-if (process.env.NODE_ENV !== 'production') {
-  var printWarning = function printWarning(format) {
-    for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-      args[_key - 1] = arguments[_key];
-    }
-
-    var argIndex = 0;
-    var message = 'Warning: ' + format.replace(/%s/g, function () {
-      return args[argIndex++];
-    });
-    if (typeof console !== 'undefined') {
-      console.error(message);
-    }
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      throw new Error(message);
-    } catch (x) {}
-  };
-
-  warning = function warning(condition, format) {
-    if (format === undefined) {
-      throw new Error('`warning(condition, format, ...args)` requires a warning ' + 'message argument');
-    }
-
-    if (format.indexOf('Failed Composite propType: ') === 0) {
-      return; // Ignore CompositeComponent proptype check.
-    }
-
-    if (!condition) {
-      for (var _len2 = arguments.length, args = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
-        args[_key2 - 2] = arguments[_key2];
-      }
-
-      printWarning.apply(undefined, [format].concat(args));
-    }
-  };
-}
-
-module.exports = warning;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(warning, 'warning', 'I:/Kodilla/Czat/node_modules/fbjs/lib/warning.js');
-  reactHotLoader.register(printWarning, 'printWarning', 'I:/Kodilla/Czat/node_modules/fbjs/lib/warning.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(2)))
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(module, process) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-/**
- * This is the web browser implementation of `debug()`.
- *
- * Expose `debug()` as the module.
- */
-
-exports = module.exports = __webpack_require__(69);
-exports.log = log;
-exports.formatArgs = formatArgs;
-exports.save = save;
-exports.load = load;
-exports.useColors = useColors;
-exports.storage = 'undefined' != typeof chrome && 'undefined' != typeof chrome.storage ? chrome.storage.local : localstorage();
-
-/**
- * Colors.
- */
-
-exports.colors = ['#0000CC', '#0000FF', '#0033CC', '#0033FF', '#0066CC', '#0066FF', '#0099CC', '#0099FF', '#00CC00', '#00CC33', '#00CC66', '#00CC99', '#00CCCC', '#00CCFF', '#3300CC', '#3300FF', '#3333CC', '#3333FF', '#3366CC', '#3366FF', '#3399CC', '#3399FF', '#33CC00', '#33CC33', '#33CC66', '#33CC99', '#33CCCC', '#33CCFF', '#6600CC', '#6600FF', '#6633CC', '#6633FF', '#66CC00', '#66CC33', '#9900CC', '#9900FF', '#9933CC', '#9933FF', '#99CC00', '#99CC33', '#CC0000', '#CC0033', '#CC0066', '#CC0099', '#CC00CC', '#CC00FF', '#CC3300', '#CC3333', '#CC3366', '#CC3399', '#CC33CC', '#CC33FF', '#CC6600', '#CC6633', '#CC9900', '#CC9933', '#CCCC00', '#CCCC33', '#FF0000', '#FF0033', '#FF0066', '#FF0099', '#FF00CC', '#FF00FF', '#FF3300', '#FF3333', '#FF3366', '#FF3399', '#FF33CC', '#FF33FF', '#FF6600', '#FF6633', '#FF9900', '#FF9933', '#FFCC00', '#FFCC33'];
-
-/**
- * Currently only WebKit-based Web Inspectors, Firefox >= v31,
- * and the Firebug extension (any Firefox version) are known
- * to support "%c" CSS customizations.
- *
- * TODO: add a `localStorage` variable to explicitly enable/disable colors
- */
-
-function useColors() {
-  // NB: In an Electron preload script, document will be defined but not fully
-  // initialized. Since we know we're in Chrome, we'll just detect this case
-  // explicitly
-  if (typeof window !== 'undefined' && window.process && window.process.type === 'renderer') {
-    return true;
-  }
-
-  // Internet Explorer and Edge do not support colors.
-  if (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/(edge|trident)\/(\d+)/)) {
-    return false;
-  }
-
-  // is webkit? http://stackoverflow.com/a/16459606/376773
-  // document is undefined in react-native: https://github.com/facebook/react-native/pull/1632
-  return typeof document !== 'undefined' && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance ||
-  // is firebug? http://stackoverflow.com/a/398120/376773
-  typeof window !== 'undefined' && window.console && (window.console.firebug || window.console.exception && window.console.table) ||
-  // is firefox >= v31?
-  // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
-  typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31 ||
-  // double check webkit in userAgent just in case we are in a worker
-  typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/);
-}
-
-/**
- * Map %j to `JSON.stringify()`, since no Web Inspectors do that by default.
- */
-
-exports.formatters.j = function (v) {
-  try {
-    return JSON.stringify(v);
-  } catch (err) {
-    return '[UnexpectedJSONParseError]: ' + err.message;
-  }
-};
-
-/**
- * Colorize log arguments if enabled.
- *
- * @api public
- */
-
-function formatArgs(args) {
-  var useColors = this.useColors;
-
-  args[0] = (useColors ? '%c' : '') + this.namespace + (useColors ? ' %c' : ' ') + args[0] + (useColors ? '%c ' : ' ') + '+' + exports.humanize(this.diff);
-
-  if (!useColors) return;
-
-  var c = 'color: ' + this.color;
-  args.splice(1, 0, c, 'color: inherit');
-
-  // the final "%c" is somewhat tricky, because there could be other
-  // arguments passed either before or after the %c, so we need to
-  // figure out the correct index to insert the CSS into
-  var index = 0;
-  var lastC = 0;
-  args[0].replace(/%[a-zA-Z%]/g, function (match) {
-    if ('%%' === match) return;
-    index++;
-    if ('%c' === match) {
-      // we only are interested in the *last* %c
-      // (the user may have provided their own)
-      lastC = index;
-    }
-  });
-
-  args.splice(lastC, 0, c);
-}
-
-/**
- * Invokes `console.log()` when available.
- * No-op when `console.log` is not a "function".
- *
- * @api public
- */
-
-function log() {
-  // this hackery is required for IE8/9, where
-  // the `console.log` function doesn't have 'apply'
-  return 'object' === (typeof console === 'undefined' ? 'undefined' : _typeof(console)) && console.log && Function.prototype.apply.call(console.log, console, arguments);
-}
-
-/**
- * Save `namespaces`.
- *
- * @param {String} namespaces
- * @api private
- */
-
-function save(namespaces) {
-  try {
-    if (null == namespaces) {
-      exports.storage.removeItem('debug');
-    } else {
-      exports.storage.debug = namespaces;
-    }
-  } catch (e) {}
-}
-
-/**
- * Load `namespaces`.
- *
- * @return {String} returns the previously persisted debug modes
- * @api private
- */
-
-function load() {
-  var r;
-  try {
-    r = exports.storage.debug;
-  } catch (e) {}
-
-  // If debug isn't set in LS, and we're in Electron, try to load $DEBUG
-  if (!r && typeof process !== 'undefined' && 'env' in process) {
-    r = process.env.DEBUG;
-  }
-
-  return r;
-}
-
-/**
- * Enable namespaces listed in `localStorage.debug` initially.
- */
-
-exports.enable(load());
-
-/**
- * Localstorage attempts to return the localstorage.
- *
- * This is necessary because safari throws
- * when a user disables cookies/localstorage
- * and you attempt to access it.
- *
- * @return {LocalStorage}
- * @api private
- */
-
-function localstorage() {
-  try {
-    return window.localStorage;
-  } catch (e) {}
-}
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(useColors, 'useColors', 'I:/Kodilla/Czat/node_modules/socket.io-client/node_modules/debug/src/browser.js');
-  reactHotLoader.register(formatArgs, 'formatArgs', 'I:/Kodilla/Czat/node_modules/socket.io-client/node_modules/debug/src/browser.js');
-  reactHotLoader.register(log, 'log', 'I:/Kodilla/Czat/node_modules/socket.io-client/node_modules/debug/src/browser.js');
-  reactHotLoader.register(save, 'save', 'I:/Kodilla/Czat/node_modules/socket.io-client/node_modules/debug/src/browser.js');
-  reactHotLoader.register(load, 'load', 'I:/Kodilla/Czat/node_modules/socket.io-client/node_modules/debug/src/browser.js');
-  reactHotLoader.register(localstorage, 'localstorage', 'I:/Kodilla/Czat/node_modules/socket.io-client/node_modules/debug/src/browser.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(2)))
-
-/***/ }),
-/* 14 */
+/* 8 */
 /***/ (function(module, exports) {
-
-/**
- * Compiles a querystring
- * Returns string representation of the object
- *
- * @param {Object}
- * @api private
- */
-
-exports.encode = function (obj) {
-  var str = '';
-
-  for (var i in obj) {
-    if (obj.hasOwnProperty(i)) {
-      if (str.length) str += '&';
-      str += encodeURIComponent(i) + '=' + encodeURIComponent(obj[i]);
-    }
-  }
-
-  return str;
-};
-
-/**
- * Parses a simple querystring into an object
- *
- * @param {String} qs
- * @api private
- */
-
-exports.decode = function (qs) {
-  var qry = {};
-  var pairs = qs.split('&');
-  for (var i = 0, l = pairs.length; i < l; i++) {
-    var pair = pairs[i].split('=');
-    qry[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
-  }
-  return qry;
-};
-
-/***/ }),
-/* 15 */
-/***/ (function(module, exports) {
-
-
-module.exports = function (a, b) {
-  var fn = function fn() {};
-  fn.prototype = b.prototype;
-  a.prototype = new fn();
-  a.prototype.constructor = a;
-};
-
-/***/ }),
-/* 16 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(module, process) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-/**
- * This is the web browser implementation of `debug()`.
- *
- * Expose `debug()` as the module.
- */
-
-exports = module.exports = __webpack_require__(83);
-exports.log = log;
-exports.formatArgs = formatArgs;
-exports.save = save;
-exports.load = load;
-exports.useColors = useColors;
-exports.storage = 'undefined' != typeof chrome && 'undefined' != typeof chrome.storage ? chrome.storage.local : localstorage();
-
-/**
- * Colors.
- */
-
-exports.colors = ['#0000CC', '#0000FF', '#0033CC', '#0033FF', '#0066CC', '#0066FF', '#0099CC', '#0099FF', '#00CC00', '#00CC33', '#00CC66', '#00CC99', '#00CCCC', '#00CCFF', '#3300CC', '#3300FF', '#3333CC', '#3333FF', '#3366CC', '#3366FF', '#3399CC', '#3399FF', '#33CC00', '#33CC33', '#33CC66', '#33CC99', '#33CCCC', '#33CCFF', '#6600CC', '#6600FF', '#6633CC', '#6633FF', '#66CC00', '#66CC33', '#9900CC', '#9900FF', '#9933CC', '#9933FF', '#99CC00', '#99CC33', '#CC0000', '#CC0033', '#CC0066', '#CC0099', '#CC00CC', '#CC00FF', '#CC3300', '#CC3333', '#CC3366', '#CC3399', '#CC33CC', '#CC33FF', '#CC6600', '#CC6633', '#CC9900', '#CC9933', '#CCCC00', '#CCCC33', '#FF0000', '#FF0033', '#FF0066', '#FF0099', '#FF00CC', '#FF00FF', '#FF3300', '#FF3333', '#FF3366', '#FF3399', '#FF33CC', '#FF33FF', '#FF6600', '#FF6633', '#FF9900', '#FF9933', '#FFCC00', '#FFCC33'];
-
-/**
- * Currently only WebKit-based Web Inspectors, Firefox >= v31,
- * and the Firebug extension (any Firefox version) are known
- * to support "%c" CSS customizations.
- *
- * TODO: add a `localStorage` variable to explicitly enable/disable colors
- */
-
-function useColors() {
-  // NB: In an Electron preload script, document will be defined but not fully
-  // initialized. Since we know we're in Chrome, we'll just detect this case
-  // explicitly
-  if (typeof window !== 'undefined' && window.process && window.process.type === 'renderer') {
-    return true;
-  }
-
-  // Internet Explorer and Edge do not support colors.
-  if (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/(edge|trident)\/(\d+)/)) {
-    return false;
-  }
-
-  // is webkit? http://stackoverflow.com/a/16459606/376773
-  // document is undefined in react-native: https://github.com/facebook/react-native/pull/1632
-  return typeof document !== 'undefined' && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance ||
-  // is firebug? http://stackoverflow.com/a/398120/376773
-  typeof window !== 'undefined' && window.console && (window.console.firebug || window.console.exception && window.console.table) ||
-  // is firefox >= v31?
-  // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
-  typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31 ||
-  // double check webkit in userAgent just in case we are in a worker
-  typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/);
-}
-
-/**
- * Map %j to `JSON.stringify()`, since no Web Inspectors do that by default.
- */
-
-exports.formatters.j = function (v) {
-  try {
-    return JSON.stringify(v);
-  } catch (err) {
-    return '[UnexpectedJSONParseError]: ' + err.message;
-  }
-};
-
-/**
- * Colorize log arguments if enabled.
- *
- * @api public
- */
-
-function formatArgs(args) {
-  var useColors = this.useColors;
-
-  args[0] = (useColors ? '%c' : '') + this.namespace + (useColors ? ' %c' : ' ') + args[0] + (useColors ? '%c ' : ' ') + '+' + exports.humanize(this.diff);
-
-  if (!useColors) return;
-
-  var c = 'color: ' + this.color;
-  args.splice(1, 0, c, 'color: inherit');
-
-  // the final "%c" is somewhat tricky, because there could be other
-  // arguments passed either before or after the %c, so we need to
-  // figure out the correct index to insert the CSS into
-  var index = 0;
-  var lastC = 0;
-  args[0].replace(/%[a-zA-Z%]/g, function (match) {
-    if ('%%' === match) return;
-    index++;
-    if ('%c' === match) {
-      // we only are interested in the *last* %c
-      // (the user may have provided their own)
-      lastC = index;
-    }
-  });
-
-  args.splice(lastC, 0, c);
-}
-
-/**
- * Invokes `console.log()` when available.
- * No-op when `console.log` is not a "function".
- *
- * @api public
- */
-
-function log() {
-  // this hackery is required for IE8/9, where
-  // the `console.log` function doesn't have 'apply'
-  return 'object' === (typeof console === 'undefined' ? 'undefined' : _typeof(console)) && console.log && Function.prototype.apply.call(console.log, console, arguments);
-}
-
-/**
- * Save `namespaces`.
- *
- * @param {String} namespaces
- * @api private
- */
-
-function save(namespaces) {
-  try {
-    if (null == namespaces) {
-      exports.storage.removeItem('debug');
-    } else {
-      exports.storage.debug = namespaces;
-    }
-  } catch (e) {}
-}
-
-/**
- * Load `namespaces`.
- *
- * @return {String} returns the previously persisted debug modes
- * @api private
- */
-
-function load() {
-  var r;
-  try {
-    r = exports.storage.debug;
-  } catch (e) {}
-
-  // If debug isn't set in LS, and we're in Electron, try to load $DEBUG
-  if (!r && typeof process !== 'undefined' && 'env' in process) {
-    r = process.env.DEBUG;
-  }
-
-  return r;
-}
-
-/**
- * Enable namespaces listed in `localStorage.debug` initially.
- */
-
-exports.enable(load());
-
-/**
- * Localstorage attempts to return the localstorage.
- *
- * This is necessary because safari throws
- * when a user disables cookies/localstorage
- * and you attempt to access it.
- *
- * @return {LocalStorage}
- * @api private
- */
-
-function localstorage() {
-  try {
-    return window.localStorage;
-  } catch (e) {}
-}
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(useColors, 'useColors', 'I:/Kodilla/Czat/node_modules/engine.io-client/node_modules/debug/src/browser.js');
-  reactHotLoader.register(formatArgs, 'formatArgs', 'I:/Kodilla/Czat/node_modules/engine.io-client/node_modules/debug/src/browser.js');
-  reactHotLoader.register(log, 'log', 'I:/Kodilla/Czat/node_modules/engine.io-client/node_modules/debug/src/browser.js');
-  reactHotLoader.register(save, 'save', 'I:/Kodilla/Czat/node_modules/engine.io-client/node_modules/debug/src/browser.js');
-  reactHotLoader.register(load, 'load', 'I:/Kodilla/Czat/node_modules/engine.io-client/node_modules/debug/src/browser.js');
-  reactHotLoader.register(localstorage, 'localstorage', 'I:/Kodilla/Czat/node_modules/engine.io-client/node_modules/debug/src/browser.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(2)))
-
-/***/ }),
-/* 17 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-	var enterModule = __webpack_require__(0).enterModule;
-
-	enterModule && enterModule(module);
-})();
 
 /*
 	MIT License http://www.opensource.org/licenses/mit-license.php
@@ -2215,27 +1343,9 @@ function toComment(sourceMap) {
 
 	return '/*# ' + data + ' */';
 }
-;
-
-(function () {
-	var reactHotLoader = __webpack_require__(0).default;
-
-	var leaveModule = __webpack_require__(0).leaveModule;
-
-	if (!reactHotLoader) {
-		return;
-	}
-
-	reactHotLoader.register(cssWithMappingToString, "cssWithMappingToString", "I:/Kodilla/Czat/node_modules/css-loader/lib/css-base.js");
-	reactHotLoader.register(toComment, "toComment", "I:/Kodilla/Czat/node_modules/css-loader/lib/css-base.js");
-	leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 18 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -2301,7 +1411,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(91);
+var	fixUrls = __webpack_require__(90);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -2621,11 +1731,518 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 19 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module, process) {/**
+/* WEBPACK VAR INJECTION */(function(process) {/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ */
+
+
+
+var emptyObject = {};
+
+if (process.env.NODE_ENV !== 'production') {
+  Object.freeze(emptyObject);
+}
+
+module.exports = emptyObject;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ *
+ */
+
+
+
+var emptyFunction = __webpack_require__(4);
+
+/**
+ * Similar to invariant but only logs a warning if the condition is not met.
+ * This can be used to log issues in development environments in critical
+ * paths. Removing the logging code for production environments will keep the
+ * same logic and follow the same code paths.
+ */
+
+var warning = emptyFunction;
+
+if (process.env.NODE_ENV !== 'production') {
+  var printWarning = function printWarning(format) {
+    for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+      args[_key - 1] = arguments[_key];
+    }
+
+    var argIndex = 0;
+    var message = 'Warning: ' + format.replace(/%s/g, function () {
+      return args[argIndex++];
+    });
+    if (typeof console !== 'undefined') {
+      console.error(message);
+    }
+    try {
+      // --- Welcome to debugging React ---
+      // This error was thrown as a convenience so that you can use this stack
+      // to find the callsite that caused this warning to fire.
+      throw new Error(message);
+    } catch (x) {}
+  };
+
+  warning = function warning(condition, format) {
+    if (format === undefined) {
+      throw new Error('`warning(condition, format, ...args)` requires a warning ' + 'message argument');
+    }
+
+    if (format.indexOf('Failed Composite propType: ') === 0) {
+      return; // Ignore CompositeComponent proptype check.
+    }
+
+    if (!condition) {
+      for (var _len2 = arguments.length, args = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
+        args[_key2 - 2] = arguments[_key2];
+      }
+
+      printWarning.apply(undefined, [format].concat(args));
+    }
+  };
+}
+
+module.exports = warning;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(process) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+/**
+ * This is the web browser implementation of `debug()`.
+ *
+ * Expose `debug()` as the module.
+ */
+
+exports = module.exports = __webpack_require__(68);
+exports.log = log;
+exports.formatArgs = formatArgs;
+exports.save = save;
+exports.load = load;
+exports.useColors = useColors;
+exports.storage = 'undefined' != typeof chrome && 'undefined' != typeof chrome.storage ? chrome.storage.local : localstorage();
+
+/**
+ * Colors.
+ */
+
+exports.colors = ['#0000CC', '#0000FF', '#0033CC', '#0033FF', '#0066CC', '#0066FF', '#0099CC', '#0099FF', '#00CC00', '#00CC33', '#00CC66', '#00CC99', '#00CCCC', '#00CCFF', '#3300CC', '#3300FF', '#3333CC', '#3333FF', '#3366CC', '#3366FF', '#3399CC', '#3399FF', '#33CC00', '#33CC33', '#33CC66', '#33CC99', '#33CCCC', '#33CCFF', '#6600CC', '#6600FF', '#6633CC', '#6633FF', '#66CC00', '#66CC33', '#9900CC', '#9900FF', '#9933CC', '#9933FF', '#99CC00', '#99CC33', '#CC0000', '#CC0033', '#CC0066', '#CC0099', '#CC00CC', '#CC00FF', '#CC3300', '#CC3333', '#CC3366', '#CC3399', '#CC33CC', '#CC33FF', '#CC6600', '#CC6633', '#CC9900', '#CC9933', '#CCCC00', '#CCCC33', '#FF0000', '#FF0033', '#FF0066', '#FF0099', '#FF00CC', '#FF00FF', '#FF3300', '#FF3333', '#FF3366', '#FF3399', '#FF33CC', '#FF33FF', '#FF6600', '#FF6633', '#FF9900', '#FF9933', '#FFCC00', '#FFCC33'];
+
+/**
+ * Currently only WebKit-based Web Inspectors, Firefox >= v31,
+ * and the Firebug extension (any Firefox version) are known
+ * to support "%c" CSS customizations.
+ *
+ * TODO: add a `localStorage` variable to explicitly enable/disable colors
+ */
+
+function useColors() {
+  // NB: In an Electron preload script, document will be defined but not fully
+  // initialized. Since we know we're in Chrome, we'll just detect this case
+  // explicitly
+  if (typeof window !== 'undefined' && window.process && window.process.type === 'renderer') {
+    return true;
+  }
+
+  // Internet Explorer and Edge do not support colors.
+  if (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/(edge|trident)\/(\d+)/)) {
+    return false;
+  }
+
+  // is webkit? http://stackoverflow.com/a/16459606/376773
+  // document is undefined in react-native: https://github.com/facebook/react-native/pull/1632
+  return typeof document !== 'undefined' && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance ||
+  // is firebug? http://stackoverflow.com/a/398120/376773
+  typeof window !== 'undefined' && window.console && (window.console.firebug || window.console.exception && window.console.table) ||
+  // is firefox >= v31?
+  // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
+  typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31 ||
+  // double check webkit in userAgent just in case we are in a worker
+  typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/);
+}
+
+/**
+ * Map %j to `JSON.stringify()`, since no Web Inspectors do that by default.
+ */
+
+exports.formatters.j = function (v) {
+  try {
+    return JSON.stringify(v);
+  } catch (err) {
+    return '[UnexpectedJSONParseError]: ' + err.message;
+  }
+};
+
+/**
+ * Colorize log arguments if enabled.
+ *
+ * @api public
+ */
+
+function formatArgs(args) {
+  var useColors = this.useColors;
+
+  args[0] = (useColors ? '%c' : '') + this.namespace + (useColors ? ' %c' : ' ') + args[0] + (useColors ? '%c ' : ' ') + '+' + exports.humanize(this.diff);
+
+  if (!useColors) return;
+
+  var c = 'color: ' + this.color;
+  args.splice(1, 0, c, 'color: inherit');
+
+  // the final "%c" is somewhat tricky, because there could be other
+  // arguments passed either before or after the %c, so we need to
+  // figure out the correct index to insert the CSS into
+  var index = 0;
+  var lastC = 0;
+  args[0].replace(/%[a-zA-Z%]/g, function (match) {
+    if ('%%' === match) return;
+    index++;
+    if ('%c' === match) {
+      // we only are interested in the *last* %c
+      // (the user may have provided their own)
+      lastC = index;
+    }
+  });
+
+  args.splice(lastC, 0, c);
+}
+
+/**
+ * Invokes `console.log()` when available.
+ * No-op when `console.log` is not a "function".
+ *
+ * @api public
+ */
+
+function log() {
+  // this hackery is required for IE8/9, where
+  // the `console.log` function doesn't have 'apply'
+  return 'object' === (typeof console === 'undefined' ? 'undefined' : _typeof(console)) && console.log && Function.prototype.apply.call(console.log, console, arguments);
+}
+
+/**
+ * Save `namespaces`.
+ *
+ * @param {String} namespaces
+ * @api private
+ */
+
+function save(namespaces) {
+  try {
+    if (null == namespaces) {
+      exports.storage.removeItem('debug');
+    } else {
+      exports.storage.debug = namespaces;
+    }
+  } catch (e) {}
+}
+
+/**
+ * Load `namespaces`.
+ *
+ * @return {String} returns the previously persisted debug modes
+ * @api private
+ */
+
+function load() {
+  var r;
+  try {
+    r = exports.storage.debug;
+  } catch (e) {}
+
+  // If debug isn't set in LS, and we're in Electron, try to load $DEBUG
+  if (!r && typeof process !== 'undefined' && 'env' in process) {
+    r = process.env.DEBUG;
+  }
+
+  return r;
+}
+
+/**
+ * Enable namespaces listed in `localStorage.debug` initially.
+ */
+
+exports.enable(load());
+
+/**
+ * Localstorage attempts to return the localstorage.
+ *
+ * This is necessary because safari throws
+ * when a user disables cookies/localstorage
+ * and you attempt to access it.
+ *
+ * @return {LocalStorage}
+ * @api private
+ */
+
+function localstorage() {
+  try {
+    return window.localStorage;
+  } catch (e) {}
+}
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports) {
+
+/**
+ * Compiles a querystring
+ * Returns string representation of the object
+ *
+ * @param {Object}
+ * @api private
+ */
+
+exports.encode = function (obj) {
+  var str = '';
+
+  for (var i in obj) {
+    if (obj.hasOwnProperty(i)) {
+      if (str.length) str += '&';
+      str += encodeURIComponent(i) + '=' + encodeURIComponent(obj[i]);
+    }
+  }
+
+  return str;
+};
+
+/**
+ * Parses a simple querystring into an object
+ *
+ * @param {String} qs
+ * @api private
+ */
+
+exports.decode = function (qs) {
+  var qry = {};
+  var pairs = qs.split('&');
+  for (var i = 0, l = pairs.length; i < l; i++) {
+    var pair = pairs[i].split('=');
+    qry[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
+  }
+  return qry;
+};
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports) {
+
+
+module.exports = function (a, b) {
+  var fn = function fn() {};
+  fn.prototype = b.prototype;
+  a.prototype = new fn();
+  a.prototype.constructor = a;
+};
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(process) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+/**
+ * This is the web browser implementation of `debug()`.
+ *
+ * Expose `debug()` as the module.
+ */
+
+exports = module.exports = __webpack_require__(82);
+exports.log = log;
+exports.formatArgs = formatArgs;
+exports.save = save;
+exports.load = load;
+exports.useColors = useColors;
+exports.storage = 'undefined' != typeof chrome && 'undefined' != typeof chrome.storage ? chrome.storage.local : localstorage();
+
+/**
+ * Colors.
+ */
+
+exports.colors = ['#0000CC', '#0000FF', '#0033CC', '#0033FF', '#0066CC', '#0066FF', '#0099CC', '#0099FF', '#00CC00', '#00CC33', '#00CC66', '#00CC99', '#00CCCC', '#00CCFF', '#3300CC', '#3300FF', '#3333CC', '#3333FF', '#3366CC', '#3366FF', '#3399CC', '#3399FF', '#33CC00', '#33CC33', '#33CC66', '#33CC99', '#33CCCC', '#33CCFF', '#6600CC', '#6600FF', '#6633CC', '#6633FF', '#66CC00', '#66CC33', '#9900CC', '#9900FF', '#9933CC', '#9933FF', '#99CC00', '#99CC33', '#CC0000', '#CC0033', '#CC0066', '#CC0099', '#CC00CC', '#CC00FF', '#CC3300', '#CC3333', '#CC3366', '#CC3399', '#CC33CC', '#CC33FF', '#CC6600', '#CC6633', '#CC9900', '#CC9933', '#CCCC00', '#CCCC33', '#FF0000', '#FF0033', '#FF0066', '#FF0099', '#FF00CC', '#FF00FF', '#FF3300', '#FF3333', '#FF3366', '#FF3399', '#FF33CC', '#FF33FF', '#FF6600', '#FF6633', '#FF9900', '#FF9933', '#FFCC00', '#FFCC33'];
+
+/**
+ * Currently only WebKit-based Web Inspectors, Firefox >= v31,
+ * and the Firebug extension (any Firefox version) are known
+ * to support "%c" CSS customizations.
+ *
+ * TODO: add a `localStorage` variable to explicitly enable/disable colors
+ */
+
+function useColors() {
+  // NB: In an Electron preload script, document will be defined but not fully
+  // initialized. Since we know we're in Chrome, we'll just detect this case
+  // explicitly
+  if (typeof window !== 'undefined' && window.process && window.process.type === 'renderer') {
+    return true;
+  }
+
+  // Internet Explorer and Edge do not support colors.
+  if (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/(edge|trident)\/(\d+)/)) {
+    return false;
+  }
+
+  // is webkit? http://stackoverflow.com/a/16459606/376773
+  // document is undefined in react-native: https://github.com/facebook/react-native/pull/1632
+  return typeof document !== 'undefined' && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance ||
+  // is firebug? http://stackoverflow.com/a/398120/376773
+  typeof window !== 'undefined' && window.console && (window.console.firebug || window.console.exception && window.console.table) ||
+  // is firefox >= v31?
+  // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
+  typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31 ||
+  // double check webkit in userAgent just in case we are in a worker
+  typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/);
+}
+
+/**
+ * Map %j to `JSON.stringify()`, since no Web Inspectors do that by default.
+ */
+
+exports.formatters.j = function (v) {
+  try {
+    return JSON.stringify(v);
+  } catch (err) {
+    return '[UnexpectedJSONParseError]: ' + err.message;
+  }
+};
+
+/**
+ * Colorize log arguments if enabled.
+ *
+ * @api public
+ */
+
+function formatArgs(args) {
+  var useColors = this.useColors;
+
+  args[0] = (useColors ? '%c' : '') + this.namespace + (useColors ? ' %c' : ' ') + args[0] + (useColors ? '%c ' : ' ') + '+' + exports.humanize(this.diff);
+
+  if (!useColors) return;
+
+  var c = 'color: ' + this.color;
+  args.splice(1, 0, c, 'color: inherit');
+
+  // the final "%c" is somewhat tricky, because there could be other
+  // arguments passed either before or after the %c, so we need to
+  // figure out the correct index to insert the CSS into
+  var index = 0;
+  var lastC = 0;
+  args[0].replace(/%[a-zA-Z%]/g, function (match) {
+    if ('%%' === match) return;
+    index++;
+    if ('%c' === match) {
+      // we only are interested in the *last* %c
+      // (the user may have provided their own)
+      lastC = index;
+    }
+  });
+
+  args.splice(lastC, 0, c);
+}
+
+/**
+ * Invokes `console.log()` when available.
+ * No-op when `console.log` is not a "function".
+ *
+ * @api public
+ */
+
+function log() {
+  // this hackery is required for IE8/9, where
+  // the `console.log` function doesn't have 'apply'
+  return 'object' === (typeof console === 'undefined' ? 'undefined' : _typeof(console)) && console.log && Function.prototype.apply.call(console.log, console, arguments);
+}
+
+/**
+ * Save `namespaces`.
+ *
+ * @param {String} namespaces
+ * @api private
+ */
+
+function save(namespaces) {
+  try {
+    if (null == namespaces) {
+      exports.storage.removeItem('debug');
+    } else {
+      exports.storage.debug = namespaces;
+    }
+  } catch (e) {}
+}
+
+/**
+ * Load `namespaces`.
+ *
+ * @return {String} returns the previously persisted debug modes
+ * @api private
+ */
+
+function load() {
+  var r;
+  try {
+    r = exports.storage.debug;
+  } catch (e) {}
+
+  // If debug isn't set in LS, and we're in Electron, try to load $DEBUG
+  if (!r && typeof process !== 'undefined' && 'env' in process) {
+    r = process.env.DEBUG;
+  }
+
+  return r;
+}
+
+/**
+ * Enable namespaces listed in `localStorage.debug` initially.
+ */
+
+exports.enable(load());
+
+/**
+ * Localstorage attempts to return the localstorage.
+ *
+ * This is necessary because safari throws
+ * when a user disables cookies/localstorage
+ * and you attempt to access it.
+ *
+ * @return {LocalStorage}
+ * @api private
+ */
+
+function localstorage() {
+  try {
+    return window.localStorage;
+  } catch (e) {}
+}
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
@@ -2636,16 +2253,10 @@ function updateLink (link, options, obj) {
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
 if (process.env.NODE_ENV !== 'production') {
-  var invariant = __webpack_require__(5);
-  var warning = __webpack_require__(12);
-  var ReactPropTypesSecret = __webpack_require__(20);
+  var invariant = __webpack_require__(3);
+  var warning = __webpack_require__(11);
+  var ReactPropTypesSecret = __webpack_require__(17);
   var loggedTypeFailures = {};
 }
 
@@ -2692,31 +2303,14 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 }
 
 module.exports = checkPropTypes;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(loggedTypeFailures, 'loggedTypeFailures', 'I:/Kodilla/Czat/node_modules/prop-types/checkPropTypes.js');
-  reactHotLoader.register(checkPropTypes, 'checkPropTypes', 'I:/Kodilla/Czat/node_modules/prop-types/checkPropTypes.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 20 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/**
+/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
@@ -2725,35 +2319,12 @@ module.exports = checkPropTypes;
 
 
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
 var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(ReactPropTypesSecret, 'ReactPropTypesSecret', 'I:/Kodilla/Czat/node_modules/prop-types/lib/ReactPropTypesSecret.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 21 */
+/* 18 */
 /***/ (function(module, exports) {
 
 /* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {/* globals __webpack_amd_options__ */
@@ -2762,16 +2333,10 @@ module.exports = __webpack_amd_options__;
 /* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ }),
-/* 22 */
-/***/ (function(module, exports, __webpack_require__) {
+/* 19 */
+/***/ (function(module, exports) {
 
-/* WEBPACK VAR INJECTION */(function(module) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /**
  * Helpers.
@@ -2916,51 +2481,21 @@ function plural(ms, n, name) {
   }
   return Math.ceil(ms / n) + ' ' + name + 's';
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(s, 's', 'I:/Kodilla/Czat/node_modules/ms/index.js');
-  reactHotLoader.register(m, 'm', 'I:/Kodilla/Czat/node_modules/ms/index.js');
-  reactHotLoader.register(h, 'h', 'I:/Kodilla/Czat/node_modules/ms/index.js');
-  reactHotLoader.register(d, 'd', 'I:/Kodilla/Czat/node_modules/ms/index.js');
-  reactHotLoader.register(y, 'y', 'I:/Kodilla/Czat/node_modules/ms/index.js');
-  reactHotLoader.register(parse, 'parse', 'I:/Kodilla/Czat/node_modules/ms/index.js');
-  reactHotLoader.register(fmtShort, 'fmtShort', 'I:/Kodilla/Czat/node_modules/ms/index.js');
-  reactHotLoader.register(fmtLong, 'fmtLong', 'I:/Kodilla/Czat/node_modules/ms/index.js');
-  reactHotLoader.register(plural, 'plural', 'I:/Kodilla/Czat/node_modules/ms/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 23 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 /**
  * Module dependencies.
  */
 
-var debug = __webpack_require__(70)('socket.io-parser');
-var Emitter = __webpack_require__(8);
-var binary = __webpack_require__(72);
-var isArray = __webpack_require__(24);
-var isBuf = __webpack_require__(33);
+var debug = __webpack_require__(69)('socket.io-parser');
+var Emitter = __webpack_require__(5);
+var binary = __webpack_require__(71);
+var isArray = __webpack_require__(21);
+var isBuf = __webpack_require__(32);
 
 /**
  * Protocol version.
@@ -3363,74 +2898,24 @@ function error(msg) {
     data: 'parser error: ' + msg
   };
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(debug, 'debug', 'I:/Kodilla/Czat/node_modules/socket.io-parser/index.js');
-  reactHotLoader.register(Encoder, 'Encoder', 'I:/Kodilla/Czat/node_modules/socket.io-parser/index.js');
-  reactHotLoader.register(ERROR_PACKET, 'ERROR_PACKET', 'I:/Kodilla/Czat/node_modules/socket.io-parser/index.js');
-  reactHotLoader.register(encodeAsString, 'encodeAsString', 'I:/Kodilla/Czat/node_modules/socket.io-parser/index.js');
-  reactHotLoader.register(tryStringify, 'tryStringify', 'I:/Kodilla/Czat/node_modules/socket.io-parser/index.js');
-  reactHotLoader.register(encodeAsBinary, 'encodeAsBinary', 'I:/Kodilla/Czat/node_modules/socket.io-parser/index.js');
-  reactHotLoader.register(Decoder, 'Decoder', 'I:/Kodilla/Czat/node_modules/socket.io-parser/index.js');
-  reactHotLoader.register(decodeString, 'decodeString', 'I:/Kodilla/Czat/node_modules/socket.io-parser/index.js');
-  reactHotLoader.register(tryParse, 'tryParse', 'I:/Kodilla/Czat/node_modules/socket.io-parser/index.js');
-  reactHotLoader.register(BinaryReconstructor, 'BinaryReconstructor', 'I:/Kodilla/Czat/node_modules/socket.io-parser/index.js');
-  reactHotLoader.register(error, 'error', 'I:/Kodilla/Czat/node_modules/socket.io-parser/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 24 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+/* 21 */
+/***/ (function(module, exports) {
 
 var toString = {}.toString;
 
 module.exports = Array.isArray || function (arr) {
   return toString.call(arr) == '[object Array]';
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(toString, 'toString', 'I:/Kodilla/Czat/node_modules/isarray/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 25 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {// browser shim for xmlhttprequest module
 
-var hasCORS = __webpack_require__(75);
+var hasCORS = __webpack_require__(74);
 
 module.exports = function (opts) {
   var xdomain = opts.xdomain;
@@ -3465,24 +2950,18 @@ module.exports = function (opts) {
     } catch (e) {}
   }
 };
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 26 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 /**
  * Module dependencies.
  */
 
-var parser = __webpack_require__(9);
-var Emitter = __webpack_require__(8);
+var parser = __webpack_require__(6);
+var Emitter = __webpack_require__(5);
 
 /**
  * Module exports.
@@ -3634,42 +3113,19 @@ Transport.prototype.onClose = function () {
   this.readyState = 'closed';
   this.emit('close');
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(Transport, 'Transport', 'I:/Kodilla/Czat/node_modules/engine.io-client/lib/transport.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 27 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {
+
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
 function _interopDefault(e) {
   return e && "object" == (typeof e === "undefined" ? "undefined" : _typeof(e)) && "default" in e ? e.default : e;
-}Object.defineProperty(exports, "__esModule", { value: !0 });var React = _interopDefault(__webpack_require__(4)),
+}Object.defineProperty(exports, "__esModule", { value: !0 });var React = _interopDefault(__webpack_require__(2)),
     classCallCheck = function classCallCheck(e, t) {
   if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
 },
@@ -3695,38 +3151,40 @@ function _interopDefault(e) {
   return e === t;
 },
     setConfig = function setConfig() {};exports.AppContainer = AppContainer, exports.hot = hot_prod, exports.areComponentsEqual = areComponentsEqual, exports.setConfig = setConfig;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(_interopDefault, "_interopDefault", "I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.production.min.js");
-  reactHotLoader.register(React, "React", "I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.production.min.js");
-  reactHotLoader.register(classCallCheck, "classCallCheck", "I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.production.min.js");
-  reactHotLoader.register(inherits, "inherits", "I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.production.min.js");
-  reactHotLoader.register(possibleConstructorReturn, "possibleConstructorReturn", "I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.production.min.js");
-  reactHotLoader.register(AppContainer, "AppContainer", "I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.production.min.js");
-  reactHotLoader.register(hot_prod, "hot_prod", "I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.production.min.js");
-  reactHotLoader.register(areComponentsEqual, "areComponentsEqual", "I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.production.min.js");
-  reactHotLoader.register(setConfig, "setConfig", "I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.production.min.js");
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 28 */
+/* 25 */
+/***/ (function(module, exports) {
+
+module.exports = function (module) {
+	if (!module.webpackPolyfill) {
+		module.deprecate = function () {};
+		module.paths = [];
+		// module.parent = undefined by default
+		if (!module.children) module.children = [];
+		Object.defineProperty(module, "loaded", {
+			enumerable: true,
+			get: function get() {
+				return module.l;
+			}
+		});
+		Object.defineProperty(module, "id", {
+			enumerable: true,
+			get: function get() {
+				return module.i;
+			}
+		});
+		module.webpackPolyfill = 1;
+	}
+	return module;
+};
+
+/***/ }),
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/**
+/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
@@ -3735,12 +3193,6 @@ function _interopDefault(e) {
  */
 
 
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 var canUseDOM = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
 
@@ -3765,31 +3217,13 @@ var ExecutionEnvironment = {
 };
 
 module.exports = ExecutionEnvironment;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(canUseDOM, 'canUseDOM', 'I:/Kodilla/Czat/node_modules/fbjs/lib/ExecutionEnvironment.js');
-  reactHotLoader.register(ExecutionEnvironment, 'ExecutionEnvironment', 'I:/Kodilla/Czat/node_modules/fbjs/lib/ExecutionEnvironment.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 29 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {
+
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -3813,12 +3247,6 @@ module.exports = ExecutionEnvironment;
  * @return {?DOMElement}
  */
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
 function getActiveElement(doc) /*?DOMElement*/{
   doc = doc || (typeof document !== 'undefined' ? document : undefined);
   if (typeof doc === 'undefined') {
@@ -3832,30 +3260,13 @@ function getActiveElement(doc) /*?DOMElement*/{
 }
 
 module.exports = getActiveElement;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(getActiveElement, 'getActiveElement', 'I:/Kodilla/Czat/node_modules/fbjs/lib/getActiveElement.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 30 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/**
+/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
@@ -3870,12 +3281,6 @@ module.exports = getActiveElement;
 
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 var hasOwnProperty = Object.prototype.hasOwnProperty;
 
@@ -3928,32 +3333,13 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(hasOwnProperty, 'hasOwnProperty', 'I:/Kodilla/Czat/node_modules/fbjs/lib/shallowEqual.js');
-  reactHotLoader.register(is, 'is', 'I:/Kodilla/Czat/node_modules/fbjs/lib/shallowEqual.js');
-  reactHotLoader.register(shallowEqual, 'shallowEqual', 'I:/Kodilla/Czat/node_modules/fbjs/lib/shallowEqual.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 31 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {
+
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -3964,13 +3350,7 @@ module.exports = shallowEqual;
  * 
  */
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-var isTextNode = __webpack_require__(59);
+var isTextNode = __webpack_require__(58);
 
 /*eslint-disable no-bitwise */
 
@@ -3996,33 +3376,23 @@ function containsNode(outerNode, innerNode) {
 }
 
 module.exports = containsNode;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(containsNode, 'containsNode', 'I:/Kodilla/Czat/node_modules/fbjs/lib/containsNode.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 32 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-    var enterModule = __webpack_require__(0).enterModule;
+"use strict";
 
-    enterModule && enterModule(module);
-})();
+
+if (true) {
+  module.exports = __webpack_require__(24);
+} else {
+  module.exports = require('./dist/react-hot-loader.development.js');
+}
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports) {
 
 /**
  * Parses an URI
@@ -4061,35 +3431,12 @@ module.exports = function parseuri(str) {
 
     return uri;
 };
-;
-
-(function () {
-    var reactHotLoader = __webpack_require__(0).default;
-
-    var leaveModule = __webpack_require__(0).leaveModule;
-
-    if (!reactHotLoader) {
-        return;
-    }
-
-    reactHotLoader.register(re, 're', 'I:/Kodilla/Czat/node_modules/parseuri/index.js');
-    reactHotLoader.register(parts, 'parts', 'I:/Kodilla/Czat/node_modules/parseuri/index.js');
-    leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 33 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, global) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
+/* WEBPACK VAR INJECTION */(function(global) {
 module.exports = isBuf;
 
 var withNativeBuffer = typeof global.Buffer === 'function' && typeof global.Buffer.isBuffer === 'function';
@@ -4114,52 +3461,27 @@ var isView = function () {
 function isBuf(obj) {
   return withNativeBuffer && global.Buffer.isBuffer(obj) || withNativeArrayBuffer && (obj instanceof global.ArrayBuffer || isView(obj));
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(withNativeBuffer, 'withNativeBuffer', 'I:/Kodilla/Czat/node_modules/socket.io-parser/is-buffer.js');
-  reactHotLoader.register(withNativeArrayBuffer, 'withNativeArrayBuffer', 'I:/Kodilla/Czat/node_modules/socket.io-parser/is-buffer.js');
-  reactHotLoader.register(isView, 'isView', 'I:/Kodilla/Czat/node_modules/socket.io-parser/is-buffer.js');
-  reactHotLoader.register(isBuf, 'isBuf', 'I:/Kodilla/Czat/node_modules/socket.io-parser/is-buffer.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 34 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /**
  * Module dependencies.
  */
 
-var eio = __webpack_require__(73);
-var Socket = __webpack_require__(40);
-var Emitter = __webpack_require__(8);
-var parser = __webpack_require__(23);
-var on = __webpack_require__(41);
-var bind = __webpack_require__(42);
-var debug = __webpack_require__(13)('socket.io-client:manager');
-var indexOf = __webpack_require__(39);
-var Backoff = __webpack_require__(88);
+var eio = __webpack_require__(72);
+var Socket = __webpack_require__(39);
+var Emitter = __webpack_require__(5);
+var parser = __webpack_require__(20);
+var on = __webpack_require__(40);
+var bind = __webpack_require__(41);
+var debug = __webpack_require__(12)('socket.io-client:manager');
+var indexOf = __webpack_require__(38);
+var Backoff = __webpack_require__(87);
 
 /**
  * IE6+ hasOwnProperty
@@ -4718,44 +4040,19 @@ Manager.prototype.onreconnect = function () {
   this.updateSocketIds();
   this.emitAll('reconnect', attempt);
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(debug, 'debug', 'I:/Kodilla/Czat/node_modules/socket.io-client/lib/manager.js');
-  reactHotLoader.register(has, 'has', 'I:/Kodilla/Czat/node_modules/socket.io-client/lib/manager.js');
-  reactHotLoader.register(Manager, 'Manager', 'I:/Kodilla/Czat/node_modules/socket.io-client/lib/manager.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 35 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, global) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-/**
+/* WEBPACK VAR INJECTION */(function(global) {/**
  * Module dependencies
  */
 
-var XMLHttpRequest = __webpack_require__(25);
-var XHR = __webpack_require__(76);
-var JSONP = __webpack_require__(84);
-var websocket = __webpack_require__(85);
+var XMLHttpRequest = __webpack_require__(22);
+var XHR = __webpack_require__(75);
+var JSONP = __webpack_require__(83);
+var websocket = __webpack_require__(84);
 
 /**
  * Export transports.
@@ -4801,44 +4098,22 @@ function polling(opts) {
     return new JSONP(opts);
   }
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(polling, 'polling', 'I:/Kodilla/Czat/node_modules/engine.io-client/lib/transports/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 36 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 /**
  * Module dependencies.
  */
 
-var Transport = __webpack_require__(26);
-var parseqs = __webpack_require__(14);
-var parser = __webpack_require__(9);
-var inherit = __webpack_require__(15);
-var yeast = __webpack_require__(38);
-var debug = __webpack_require__(16)('engine.io-client:polling');
+var Transport = __webpack_require__(23);
+var parseqs = __webpack_require__(13);
+var parser = __webpack_require__(6);
+var inherit = __webpack_require__(14);
+var yeast = __webpack_require__(37);
+var debug = __webpack_require__(15)('engine.io-client:polling');
 
 /**
  * Module exports.
@@ -4851,7 +4126,7 @@ module.exports = Polling;
  */
 
 var hasXHR2 = function () {
-  var XMLHttpRequest = __webpack_require__(25);
+  var XMLHttpRequest = __webpack_require__(22);
   var xhr = new XMLHttpRequest({ xdomain: false });
   return null != xhr.responseType;
 }();
@@ -5073,37 +4348,12 @@ Polling.prototype.uri = function () {
   var ipv6 = this.hostname.indexOf(':') !== -1;
   return schema + '://' + (ipv6 ? '[' + this.hostname + ']' : this.hostname) + port + this.path + query;
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(debug, 'debug', 'I:/Kodilla/Czat/node_modules/engine.io-client/lib/transports/polling.js');
-  reactHotLoader.register(hasXHR2, 'hasXHR2', 'I:/Kodilla/Czat/node_modules/engine.io-client/lib/transports/polling.js');
-  reactHotLoader.register(Polling, 'Polling', 'I:/Kodilla/Czat/node_modules/engine.io-client/lib/transports/polling.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 37 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, global) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+/* WEBPACK VAR INJECTION */(function(global) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /* global Blob File */
 
@@ -5111,7 +4361,7 @@ Polling.prototype.uri = function () {
  * Module requirements.
  */
 
-var isArray = __webpack_require__(24);
+var isArray = __webpack_require__(21);
 
 var toString = Object.prototype.toString;
 var withNativeBlob = typeof global.Blob === 'function' || toString.call(global.Blob) === '[object BlobConstructor]';
@@ -5163,39 +4413,14 @@ function hasBinary(obj) {
 
   return false;
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(toString, 'toString', 'I:/Kodilla/Czat/node_modules/has-binary2/index.js');
-  reactHotLoader.register(withNativeBlob, 'withNativeBlob', 'I:/Kodilla/Czat/node_modules/has-binary2/index.js');
-  reactHotLoader.register(withNativeFile, 'withNativeFile', 'I:/Kodilla/Czat/node_modules/has-binary2/index.js');
-  reactHotLoader.register(hasBinary, 'hasBinary', 'I:/Kodilla/Czat/node_modules/has-binary2/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 38 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 var alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_'.split(''),
     length = 64,
@@ -5263,41 +4488,11 @@ for (; i < length; i++) {
 yeast.encode = encode;
 yeast.decode = decode;
 module.exports = yeast;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(alphabet, 'alphabet', 'I:/Kodilla/Czat/node_modules/yeast/index.js');
-  reactHotLoader.register(length, 'length', 'I:/Kodilla/Czat/node_modules/yeast/index.js');
-  reactHotLoader.register(map, 'map', 'I:/Kodilla/Czat/node_modules/yeast/index.js');
-  reactHotLoader.register(seed, 'seed', 'I:/Kodilla/Czat/node_modules/yeast/index.js');
-  reactHotLoader.register(i, 'i', 'I:/Kodilla/Czat/node_modules/yeast/index.js');
-  reactHotLoader.register(prev, 'prev', 'I:/Kodilla/Czat/node_modules/yeast/index.js');
-  reactHotLoader.register(encode, 'encode', 'I:/Kodilla/Czat/node_modules/yeast/index.js');
-  reactHotLoader.register(decode, 'decode', 'I:/Kodilla/Czat/node_modules/yeast/index.js');
-  reactHotLoader.register(yeast, 'yeast', 'I:/Kodilla/Czat/node_modules/yeast/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 39 */
-/***/ (function(module, exports, __webpack_require__) {
+/* 38 */
+/***/ (function(module, exports) {
 
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 var indexOf = [].indexOf;
 
@@ -5308,48 +4503,25 @@ module.exports = function (arr, obj) {
   }
   return -1;
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(indexOf, "indexOf", "I:/Kodilla/Czat/node_modules/indexof/index.js");
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 40 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /**
  * Module dependencies.
  */
 
-var parser = __webpack_require__(23);
-var Emitter = __webpack_require__(8);
-var toArray = __webpack_require__(87);
-var on = __webpack_require__(41);
-var bind = __webpack_require__(42);
-var debug = __webpack_require__(13)('socket.io-client:socket');
-var parseqs = __webpack_require__(14);
-var hasBin = __webpack_require__(37);
+var parser = __webpack_require__(20);
+var Emitter = __webpack_require__(5);
+var toArray = __webpack_require__(86);
+var on = __webpack_require__(40);
+var bind = __webpack_require__(41);
+var debug = __webpack_require__(12)('socket.io-client:socket');
+var parseqs = __webpack_require__(13);
+var hasBin = __webpack_require__(36);
 
 /**
  * Module exports.
@@ -5766,36 +4938,11 @@ Socket.prototype.binary = function (binary) {
   this.flags.binary = binary;
   return this;
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(debug, 'debug', 'I:/Kodilla/Czat/node_modules/socket.io-client/lib/socket.js');
-  reactHotLoader.register(events, 'events', 'I:/Kodilla/Czat/node_modules/socket.io-client/lib/socket.js');
-  reactHotLoader.register(emit, 'emit', 'I:/Kodilla/Czat/node_modules/socket.io-client/lib/socket.js');
-  reactHotLoader.register(Socket, 'Socket', 'I:/Kodilla/Czat/node_modules/socket.io-client/lib/socket.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 41 */
-/***/ (function(module, exports, __webpack_require__) {
+/* 40 */
+/***/ (function(module, exports) {
 
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 /**
  * Module exports.
@@ -5820,33 +4967,10 @@ function on(obj, ev, fn) {
     }
   };
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(on, "on", "I:/Kodilla/Czat/node_modules/socket.io-client/lib/on.js");
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 42 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+/* 41 */
+/***/ (function(module, exports) {
 
 /**
  * Slice reference.
@@ -5871,52 +4995,35 @@ module.exports = function (obj, fn) {
     return fn.apply(obj, args.concat(slice.call(arguments)));
   };
 };
-;
 
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
+/***/ }),
+/* 42 */
+/***/ (function(module, exports, __webpack_require__) {
 
-  var leaveModule = __webpack_require__(0).leaveModule;
+__webpack_require__(43);
+module.exports = __webpack_require__(55);
 
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(slice, 'slice', 'I:/Kodilla/Czat/node_modules/component-bind/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
 /* 43 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(44);
-module.exports = __webpack_require__(56);
-
-
-/***/ }),
-/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(27);
+  module.exports = __webpack_require__(24);
 } else {
-  module.exports = __webpack_require__(47);
+  module.exports = __webpack_require__(46);
 }
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 45 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/** @license React v16.3.2
+/** @license React v16.3.2
  * react.production.min.js
  *
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -5929,16 +5036,10 @@ if (process.env.NODE_ENV === 'production') {
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-var m = __webpack_require__(10),
-    n = __webpack_require__(5),
-    p = __webpack_require__(11),
-    q = __webpack_require__(6),
+var m = __webpack_require__(7),
+    n = __webpack_require__(3),
+    p = __webpack_require__(10),
+    q = __webpack_require__(4),
     r = "function" === typeof Symbol && Symbol["for"],
     t = r ? Symbol["for"]("react.element") : 60103,
     u = r ? Symbol["for"]("react.portal") : 60106,
@@ -6051,59 +5152,9 @@ var W = { Children: { map: function map(a, b, e) {
   }, isValidElement: M, version: "16.3.2", __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: { ReactCurrentOwner: I, assign: m } },
     X = Object.freeze({ default: W }),
     Y = X && W || X;module.exports = Y["default"] ? Y["default"] : Y;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(r, "r", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(t, "t", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(u, "u", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(v, "v", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(w, "w", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(x, "x", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(y, "y", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(z, "z", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(A, "A", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(B, "B", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(C, "C", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(D, "D", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(E, "E", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(F, "F", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(G, "G", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(H, "H", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(I, "I", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(J, "J", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(K, "K", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(L, "L", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(M, "M", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(escape, "escape", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(N, "N", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(O, "O", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(P, "P", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(Q, "Q", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(R, "R", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(S, "S", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(T, "T", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(U, "U", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(V, "V", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(W, "W", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(X, "X", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  reactHotLoader.register(Y, "Y", "I:/Kodilla/Czat/node_modules/react/cjs/react.production.min.js");
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 46 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6124,12 +5175,12 @@ if (process.env.NODE_ENV !== "production") {
   (function () {
     'use strict';
 
-    var _assign = __webpack_require__(10);
-    var invariant = __webpack_require__(5);
-    var emptyObject = __webpack_require__(11);
-    var warning = __webpack_require__(12);
-    var emptyFunction = __webpack_require__(6);
-    var checkPropTypes = __webpack_require__(19);
+    var _assign = __webpack_require__(7);
+    var invariant = __webpack_require__(3);
+    var emptyObject = __webpack_require__(10);
+    var warning = __webpack_require__(11);
+    var emptyFunction = __webpack_require__(4);
+    var checkPropTypes = __webpack_require__(16);
 
     // TODO: this is special because it gets imported during build.
 
@@ -7517,22 +6568,16 @@ if (process.env.NODE_ENV !== "production") {
     module.exports = react;
   })();
 }
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 47 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {
+
 
 var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
@@ -7540,13 +6585,13 @@ function _interopDefault(ex) {
   return ex && (typeof ex === 'undefined' ? 'undefined' : _typeof2(ex)) === 'object' && 'default' in ex ? ex['default'] : ex;
 }
 
-var React = __webpack_require__(4);
+var React = __webpack_require__(2);
 var React__default = _interopDefault(React);
-var shallowEqual = _interopDefault(__webpack_require__(48));
-var levenshtein = _interopDefault(__webpack_require__(49));
-var PropTypes = _interopDefault(__webpack_require__(51));
-var reactLifecyclesCompat = __webpack_require__(54);
-var hoistNonReactStatic = _interopDefault(__webpack_require__(55));
+var shallowEqual = _interopDefault(__webpack_require__(47));
+var levenshtein = _interopDefault(__webpack_require__(48));
+var PropTypes = _interopDefault(__webpack_require__(50));
+var reactLifecyclesCompat = __webpack_require__(53);
+var hoistNonReactStatic = _interopDefault(__webpack_require__(54));
 
 /* eslint-disable no-underscore-dangle */
 
@@ -9081,150 +8126,9 @@ exports.enterModule = enter;
 exports.leaveModule = leave;
 exports.areComponentsEqual = areComponentsEqual;
 exports.setConfig = setConfig;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(_interopDefault, '_interopDefault', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(React__default, 'React__default', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(shallowEqual, 'shallowEqual', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(levenshtein, 'levenshtein', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(PropTypes, 'PropTypes', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(hoistNonReactStatic, 'hoistNonReactStatic', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(isCompositeComponent, 'isCompositeComponent', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(getComponentDisplayName, 'getComponentDisplayName', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(getInternalInstance, 'getInternalInstance', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(updateInstance, 'updateInstance', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(isFragmentNode, 'isFragmentNode', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(generation, 'generation', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(increment, 'increment', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(get, 'get', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(PREFIX, 'PREFIX', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(PROXY_KEY, 'PROXY_KEY', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(GENERATION, 'GENERATION', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(REGENERATE_METHOD, 'REGENERATE_METHOD', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(UNWRAP_PROXY, 'UNWRAP_PROXY', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(CACHED_RESULT, 'CACHED_RESULT', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(PROXY_IS_MOUNTED, 'PROXY_IS_MOUNTED', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(configuration, 'configuration', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(logger, 'logger', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(_typeof, '_typeof', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(classCallCheck, 'classCallCheck', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(_extends, '_extends', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(inherits, 'inherits', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(possibleConstructorReturn, 'possibleConstructorReturn', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(getDisplayName, 'getDisplayName', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(reactLifeCycleMountMethods, 'reactLifeCycleMountMethods', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(isReactClass, 'isReactClass', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(safeReactConstructor, 'safeReactConstructor', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(isNativeFunction, 'isNativeFunction', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(identity, 'identity', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(indirectEval, 'indirectEval', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(doesSupportClasses, 'doesSupportClasses', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(ES6ProxyComponentFactory, 'ES6ProxyComponentFactory', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(ES5ProxyComponentFactory, 'ES5ProxyComponentFactory', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(isReactComponentInstance, 'isReactComponentInstance', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(proxyClassCreator, 'proxyClassCreator', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(getOwnKeys, 'getOwnKeys', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(shallowStringsEqual, 'shallowStringsEqual', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(deepPrototypeUpdate, 'deepPrototypeUpdate', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(safeDefineProperty, 'safeDefineProperty', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(RESERVED_STATICS, 'RESERVED_STATICS', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(transferStaticProps, 'transferStaticProps', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(mergeComponents, 'mergeComponents', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(checkLifeCycleMethods, 'checkLifeCycleMethods', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(inject, 'inject', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(has, 'has', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(proxies, 'proxies', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(resetClassProxies, 'resetClassProxies', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(blackListedClassMembers, 'blackListedClassMembers', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(defaultRenderOptions, 'defaultRenderOptions', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(defineClassMember, 'defineClassMember', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(defineClassMembers, 'defineClassMembers', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(setSFPFlag, 'setSFPFlag', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(copyMethodDescriptors, 'copyMethodDescriptors', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(createClassProxy, 'createClassProxy', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(proxiesByID, 'proxiesByID', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(idsByType, 'idsByType', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(elementCount, 'elementCount', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(renderOptions, 'renderOptions', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(generateTypeId, 'generateTypeId', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(getIdByType, 'getIdByType', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(getProxyById, 'getProxyById', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(getProxyByType, 'getProxyByType', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(setStandInOptions, 'setStandInOptions', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(updateProxyById, 'updateProxyById', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(createProxyForType, 'createProxyForType', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(resetProxies, 'resetProxies', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(resolveType, 'resolveType', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(reactHotLoader, 'reactHotLoader', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(pushStack, 'pushStack', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(hydrateFiberStack, 'hydrateFiberStack', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(pushState, 'pushState', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(hydrateLegacyStack, 'hydrateLegacyStack', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(getReactStack, 'getReactStack', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(UNDEFINED_NAMES, 'UNDEFINED_NAMES', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(renderStack, 'renderStack', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(stackReport, 'stackReport', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(areNamesEqual, 'areNamesEqual', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(isReactClass$1, 'isReactClass$1', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(isFunctional, 'isFunctional', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(isArray, 'isArray', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(asArray, 'asArray', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(getTypeOf, 'getTypeOf', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(filterNullArray, 'filterNullArray', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(unflatten, 'unflatten', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(getElementType, 'getElementType', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(haveTextSimilarity, 'haveTextSimilarity', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(equalClasses, 'equalClasses', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(isSwappable, 'isSwappable', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(render, 'render', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(NO_CHILDREN, 'NO_CHILDREN', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(mapChildren, 'mapChildren', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(mergeInject, 'mergeInject', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(transformFlowNode, 'transformFlowNode', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(scheduledUpdates, 'scheduledUpdates', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(scheduledUpdate, 'scheduledUpdate', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(flushScheduledUpdates, 'flushScheduledUpdates', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(unscheduleUpdate, 'unscheduleUpdate', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(scheduleInstanceUpdate, 'scheduleInstanceUpdate', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(hotReplacementRender, 'hotReplacementRender', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(hotReplacementRender$1, 'hotReplacementRender$1', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(reconcileHotReplacement, 'reconcileHotReplacement', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(RENDERED_GENERATION, 'RENDERED_GENERATION', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(renderReconciler, 'renderReconciler', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(asyncReconciledRender, 'asyncReconciledRender', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(proxyWrapper, 'proxyWrapper', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(AppContainer, 'AppContainer', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(openedModules, 'openedModules', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(hotModules, 'hotModules', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(createHotModule, 'createHotModule', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(hotModule, 'hotModule', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(isOpened, 'isOpened', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(enter, 'enter', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(leave, 'leave', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(requireIndirect, 'requireIndirect', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(createHoc, 'createHoc', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(makeHotExport, 'makeHotExport', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(hot, 'hot', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(getProxyOrType, 'getProxyOrType', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(areComponentsEqual, 'areComponentsEqual', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  reactHotLoader.register(setConfig, 'setConfig', 'I:/Kodilla/Czat/node_modules/react-hot-loader/dist/react-hot-loader.development.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 48 */
+/* 47 */
 /***/ (function(module, exports) {
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -9277,7 +8181,7 @@ module.exports = function shallowEqual(objA, objB, compare, compareContext) {
 };
 
 /***/ }),
-/* 49 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module) {var __WEBPACK_AMD_DEFINE_RESULT__;(function () {
@@ -9396,7 +8300,7 @@ module.exports = function shallowEqual(objA, objB, compare, compareContext) {
   };
 
   // amd
-  if ("function" !== "undefined" && __webpack_require__(50) !== null && __webpack_require__(21)) {
+  if ("function" !== "undefined" && __webpack_require__(49) !== null && __webpack_require__(18)) {
     !(__WEBPACK_AMD_DEFINE_RESULT__ = (function () {
       return Levenshtein;
     }).call(exports, __webpack_require__, exports, module),
@@ -9415,10 +8319,10 @@ module.exports = function shallowEqual(objA, objB, compare, compareContext) {
           window.Levenshtein = Levenshtein;
         }
 })();
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)(module)))
 
 /***/ }),
-/* 50 */
+/* 49 */
 /***/ (function(module, exports) {
 
 module.exports = function() {
@@ -9427,16 +8331,10 @@ module.exports = function() {
 
 
 /***/ }),
-/* 51 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, process) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+/* WEBPACK VAR INJECTION */(function(process) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -9455,34 +8353,16 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(52)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(51)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(53)();
+  module.exports = __webpack_require__(52)();
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(REACT_ELEMENT_TYPE, 'REACT_ELEMENT_TYPE', 'I:/Kodilla/Czat/node_modules/prop-types/index.js');
-  reactHotLoader.register(isValidElement, 'isValidElement', 'I:/Kodilla/Czat/node_modules/prop-types/index.js');
-  reactHotLoader.register(throwOnDirectAccess, 'throwOnDirectAccess', 'I:/Kodilla/Czat/node_modules/prop-types/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 52 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9497,13 +8377,13 @@ if (process.env.NODE_ENV !== 'production') {
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var emptyFunction = __webpack_require__(6);
-var invariant = __webpack_require__(5);
-var warning = __webpack_require__(12);
-var assign = __webpack_require__(10);
+var emptyFunction = __webpack_require__(4);
+var invariant = __webpack_require__(3);
+var warning = __webpack_require__(11);
+var assign = __webpack_require__(7);
 
-var ReactPropTypesSecret = __webpack_require__(20);
-var checkPropTypes = __webpack_require__(19);
+var ReactPropTypesSecret = __webpack_require__(17);
+var checkPropTypes = __webpack_require__(16);
 
 module.exports = function (isValidElement, throwOnDirectAccess) {
   /* global Symbol */
@@ -10004,10 +8884,10 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
 
   return ReactPropTypes;
 };
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 53 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10020,9 +8900,9 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
 
 
 
-var emptyFunction = __webpack_require__(6);
-var invariant = __webpack_require__(5);
-var ReactPropTypesSecret = __webpack_require__(20);
+var emptyFunction = __webpack_require__(4);
+var invariant = __webpack_require__(3);
+var ReactPropTypesSecret = __webpack_require__(17);
 
 module.exports = function () {
   function shim(props, propName, componentName, location, propFullName, secret) {
@@ -10066,18 +8946,12 @@ module.exports = function () {
 };
 
 /***/ }),
-/* 54 */
+/* 53 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function(module, process) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "polyfill", function() { return polyfill; });
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "polyfill", function() { return polyfill; });
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -10204,29 +9078,10 @@ function polyfill(Component) {
 }
 
 
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(componentWillMount, 'componentWillMount', 'I:/Kodilla/Czat/node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js');
-  reactHotLoader.register(componentWillReceiveProps, 'componentWillReceiveProps', 'I:/Kodilla/Czat/node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js');
-  reactHotLoader.register(componentWillUpdate, 'componentWillUpdate', 'I:/Kodilla/Czat/node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js');
-  reactHotLoader.register(polyfill, 'polyfill', 'I:/Kodilla/Czat/node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(7)(module), __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 55 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -10309,24 +9164,18 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof = 
 });
 
 /***/ }),
-/* 56 */
+/* 55 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_hot_loader__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_hot_loader__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_hot_loader___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_hot_loader__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__App__ = __webpack_require__(66);
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__App__ = __webpack_require__(65);
 
 
 
@@ -10338,7 +9187,7 @@ var render = function render(Component) {
     __WEBPACK_IMPORTED_MODULE_2_react_hot_loader__["AppContainer"],
     null,
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Component, null)
-  ), document.getElementById("root"));
+  ), document.getElementById("app"));
 };
 
 render(__WEBPACK_IMPORTED_MODULE_3__App__["a" /* default */]);
@@ -10349,36 +9198,13 @@ if (false) {
     render(NewApp);
   });
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(render, "render", "I:/Kodilla/Czat/client/index.js");
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(7)(module)))
 
 /***/ }),
-/* 57 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module, process) {
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+/* WEBPACK VAR INJECTION */(function(process) {
 
 function checkDCE() {
   /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */
@@ -10409,34 +9235,18 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(58);
+  module.exports = __webpack_require__(57);
 } else {
-  module.exports = __webpack_require__(61);
+  module.exports = __webpack_require__(60);
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(checkDCE, 'checkDCE', 'I:/Kodilla/Czat/node_modules/react-dom/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 58 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/** @license React v16.3.2
+/** @license React v16.3.2
  * react-dom.production.min.js
  *
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -10452,21 +9262,15 @@ if (process.env.NODE_ENV === 'production') {
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-var ba = __webpack_require__(5),
-    ea = __webpack_require__(4),
-    m = __webpack_require__(28),
-    A = __webpack_require__(10),
-    C = __webpack_require__(6),
-    fa = __webpack_require__(29),
-    ha = __webpack_require__(30),
-    ja = __webpack_require__(31),
-    ka = __webpack_require__(11);
+var ba = __webpack_require__(3),
+    ea = __webpack_require__(2),
+    m = __webpack_require__(26),
+    A = __webpack_require__(7),
+    C = __webpack_require__(4),
+    fa = __webpack_require__(27),
+    ha = __webpack_require__(28),
+    ja = __webpack_require__(29),
+    ka = __webpack_require__(10);
 function D(a) {
   for (var b = arguments.length - 1, c = "http://reactjs.org/docs/error-decoder.html?invariant\x3d" + a, d = 0; d < b; d++) {
     c += "\x26args[]\x3d" + encodeURIComponent(arguments[d + 1]);
@@ -12672,338 +11476,13 @@ var Gg = { createPortal: Fg, findDOMNode: function findDOMNode(a) {
   } };
 X.injectIntoDevTools({ findFiberByHostInstance: Ua, bundleType: 0, version: "16.3.2", rendererPackageName: "react-dom" });var Hg = Object.freeze({ default: Gg }),
     Ig = Hg && Gg || Hg;module.exports = Ig["default"] ? Ig["default"] : Ig;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(D, "D", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ma, "ma", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(E, "E", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(na, "na", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(oa, "oa", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(pa, "pa", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(qa, "qa", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ta, "ta", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ra, "ra", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(sa, "sa", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ua, "ua", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(va, "va", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(wa, "wa", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(xa, "xa", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ca, "Ca", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Da, "Da", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ea, "Ea", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Fa, "Fa", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ga, "Ga", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ha, "Ha", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ia, "Ia", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ja, "Ja", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ka, "Ka", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(La, "La", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ma, "Ma", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Na, "Na", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Oa, "Oa", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Pa, "Pa", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Qa, "Qa", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ra, "Ra", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Sa, "Sa", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(F, "F", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ta, "Ta", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ua, "Ua", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Va, "Va", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Xa, "Xa", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(bb, "bb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(L, "L", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(cb, "cb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(db, "db", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(eb, "eb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(fb, "fb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(gb, "gb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(hb, "hb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ib, "ib", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(jb, "jb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(kb, "kb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(lb, "lb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(mb, "mb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(M, "M", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(nb, "nb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ob, "ob", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(pb, "pb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(qb, "qb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(N, "N", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(sb, "sb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(tb, "tb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(rb, "rb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ub, "ub", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(vb, "vb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(wb, "wb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(xb, "xb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(yb, "yb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(zb, "zb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ab, "Ab", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Bb, "Bb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Kb, "Kb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Lb, "Lb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Mb, "Mb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Nb, "Nb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ob, "Ob", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Pb, "Pb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Qb, "Qb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Rb, "Rb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Sb, "Sb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Tb, "Tb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ub, "Ub", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Vb, "Vb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Wb, "Wb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Xb, "Xb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Yb, "Yb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Zb, "Zb", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register($b, "$b", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ac, "ac", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(bc, "bc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(cc, "cc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(dc, "dc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ec, "ec", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(fc, "fc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(gc, "gc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(hc, "hc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ic, "ic", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(jc, "jc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(kc, "kc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(lc, "lc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(mc, "mc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(nc, "nc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(O, "O", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(oc, "oc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(pc, "pc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(qc, "qc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(rc, "rc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(sc, "sc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(tc, "tc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(uc, "uc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(vc, "vc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(wc, "wc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(xc, "xc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(yc, "yc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(zc, "zc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ac, "Ac", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Bc, "Bc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Cc, "Cc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Dc, "Dc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ec, "Ec", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Fc, "Fc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Gc, "Gc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Hc, "Hc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(U, "U", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(V, "V", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Sc, "Sc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Tc, "Tc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Uc, "Uc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Vc, "Vc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Wc, "Wc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Yc, "Yc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Zc, "Zc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ad, "ad", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register($c, "$c", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Xc, "Xc", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(bd, "bd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(cd, "cd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(dd, "dd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ed, "ed", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(fd, "fd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(gd, "gd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(hd, "hd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(id, "id", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(jd, "jd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(kd, "kd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ld, "ld", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(md, "md", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(nd, "nd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(od, "od", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(pd, "pd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(qd, "qd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(rd, "rd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(sd, "sd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(td, "td", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ud, "ud", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(vd, "vd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(wd, "wd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(xd, "xd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(yd, "yd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(zd, "zd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ad, "Ad", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Bd, "Bd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Cd, "Cd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Dd, "Dd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ed, "Ed", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Fd, "Fd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Gd, "Gd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Hd, "Hd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Id, "Id", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Jd, "Jd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Kd, "Kd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ld, "Ld", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Md, "Md", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Nd, "Nd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Od, "Od", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Pd, "Pd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Qd, "Qd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Rd, "Rd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Sd, "Sd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Td, "Td", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ud, "Ud", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Vd, "Vd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Wd, "Wd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(W, "W", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Zd, "Zd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Xd, "Xd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Yd, "Yd", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register($d, "$d", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ae, "ae", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(be, "be", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ce, "ce", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(de, "de", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ee, "ee", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(fe, "fe", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ge, "ge", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(he, "he", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ie, "ie", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(je, "je", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ke, "ke", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(le, "le", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(me, "me", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ne, "ne", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(oe, "oe", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(pe, "pe", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(qe, "qe", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(re, "re", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(se, "se", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(te, "te", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ue, "ue", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ve, "ve", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(xe, "xe", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ze, "ze", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ae, "Ae", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Be, "Be", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ce, "Ce", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(De, "De", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ee, "Ee", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Fe, "Fe", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ge, "Ge", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(He, "He", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ie, "Ie", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Je, "Je", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ke, "Ke", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Le, "Le", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Me, "Me", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ne, "Ne", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Oe, "Oe", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Pe, "Pe", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Qe, "Qe", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Re, "Re", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Se, "Se", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Te, "Te", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ue, "Ue", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ve, "Ve", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(We, "We", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Xe, "Xe", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ye, "Ye", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ze, "Ze", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register($e, "$e", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(af, "af", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(bf, "bf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(cf, "cf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(df, "df", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ef, "ef", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ff, "ff", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(gf, "gf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(hf, "hf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(jf, "jf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(kf, "kf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(lf, "lf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(mf, "mf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(nf, "nf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(of, "of", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(pf, "pf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(qf, "qf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(rf, "rf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(sf, "sf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(tf, "tf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(uf, "uf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(vf, "vf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(wf, "wf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(xf, "xf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(yf, "yf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(zf, "zf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Af, "Af", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Bf, "Bf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Cf, "Cf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Df, "Df", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ef, "Ef", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ff, "Ff", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Gf, "Gf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Hf, "Hf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(If, "If", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Jf, "Jf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Kf, "Kf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Lf, "Lf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Mf, "Mf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Nf, "Nf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Of, "Of", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Pf, "Pf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Qf, "Qf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Rf, "Rf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Sf, "Sf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Tf, "Tf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Uf, "Uf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Vf, "Vf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Wf, "Wf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Xf, "Xf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Yf, "Yf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Zf, "Zf", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register($f, "$f", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ag, "ag", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(bg, "bg", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(cg, "cg", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(dg, "dg", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(eg, "eg", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(fg, "fg", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ng, "ng", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(og, "og", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(pg, "pg", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(qg, "qg", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(rg, "rg", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(sg, "sg", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(tg, "tg", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(ug, "ug", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(vg, "vg", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(X, "X", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Cg, "Cg", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Dg, "Dg", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Eg, "Eg", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Fg, "Fg", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Gg, "Gg", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Hg, "Hg", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  reactHotLoader.register(Ig, "Ig", "I:/Kodilla/Czat/node_modules/react-dom/cjs/react-dom.production.min.js");
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 59 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {
+
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -13014,13 +11493,7 @@ X.injectIntoDevTools({ findFiberByHostInstance: Ua, bundleType: 0, version: "16.
  * @typechecks
  */
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-var isNode = __webpack_require__(60);
+var isNode = __webpack_require__(59);
 
 /**
  * @param {*} object The object to check.
@@ -13031,30 +11504,13 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(isTextNode, 'isTextNode', 'I:/Kodilla/Czat/node_modules/fbjs/lib/isTextNode.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 60 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {
+
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -13072,12 +11528,6 @@ module.exports = isTextNode;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
 function isNode(object) {
   var doc = object ? object.ownerDocument || object : document;
   var defaultView = doc.defaultView || window;
@@ -13085,26 +11535,9 @@ function isNode(object) {
 }
 
 module.exports = isNode;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(isNode, 'isNode', 'I:/Kodilla/Czat/node_modules/fbjs/lib/isNode.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 61 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13115,7 +11548,7 @@ module.exports = isNode;
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};if(process.env.NODE_ENV!=="production"){(function(){'use strict';var invariant=__webpack_require__(5);var React=__webpack_require__(4);var warning=__webpack_require__(12);var ExecutionEnvironment=__webpack_require__(28);var _assign=__webpack_require__(10);var emptyFunction=__webpack_require__(6);var checkPropTypes=__webpack_require__(19);var getActiveElement=__webpack_require__(29);var shallowEqual=__webpack_require__(30);var containsNode=__webpack_require__(31);var emptyObject=__webpack_require__(11);var hyphenateStyleName=__webpack_require__(62);var camelizeStyleName=__webpack_require__(64);// Relying on the `invariant()` implementation lets us
+ */var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};if(process.env.NODE_ENV!=="production"){(function(){'use strict';var invariant=__webpack_require__(3);var React=__webpack_require__(2);var warning=__webpack_require__(11);var ExecutionEnvironment=__webpack_require__(26);var _assign=__webpack_require__(7);var emptyFunction=__webpack_require__(4);var checkPropTypes=__webpack_require__(16);var getActiveElement=__webpack_require__(27);var shallowEqual=__webpack_require__(28);var containsNode=__webpack_require__(29);var emptyObject=__webpack_require__(10);var hyphenateStyleName=__webpack_require__(61);var camelizeStyleName=__webpack_require__(63);// Relying on the `invariant()` implementation lets us
 // have preserve the format and params in the www builds.
 !React?invariant(false,'ReactDOM was loaded before React. Make sure you load the React package before loading ReactDOM.'):void 0;var invokeGuardedCallback=function invokeGuardedCallback(name,func,context,a,b,c,d,e,f){this._hasCaughtError=false;this._caughtError=null;var funcArgs=Array.prototype.slice.call(arguments,3);try{func.apply(context,funcArgs);}catch(error){this._caughtError=error;this._hasCaughtError=true;}};{// In DEV mode, we swap out invokeGuardedCallback for a special version
 // that plays more nicely with the browser's DevTools. The idea is to preserve
@@ -16031,14 +14464,14 @@ if(navigator.userAgent.indexOf('Chrome')>-1&&navigator.userAgent.indexOf('Edge')
 if(/^(https?|file):$/.test(protocol)){console.info('%cDownload the React DevTools '+'for a better development experience: '+'https://fb.me/react-devtools'+(protocol==='file:'?'\nYou might need to use a local HTTP server (instead of file://): '+'https://fb.me/react-devtools-faq':''),'font-weight:bold');}}}}var ReactDOM$2=Object.freeze({default:ReactDOM});var ReactDOM$3=ReactDOM$2&&ReactDOM||ReactDOM$2;// TODO: decide on the top-level export form.
 // This is hacky but makes it work with both Rollup and Jest.
 var reactDom=ReactDOM$3['default']?ReactDOM$3['default']:ReactDOM$3;module.exports=reactDom;})();}
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 62 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/**
+/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
@@ -16049,13 +14482,7 @@ var reactDom=ReactDOM$3['default']?ReactDOM$3['default']:ReactDOM$3;module.expor
 
 
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-var hyphenate = __webpack_require__(63);
+var hyphenate = __webpack_require__(62);
 
 var msPattern = /^ms-/;
 
@@ -16080,31 +14507,13 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(msPattern, 'msPattern', 'I:/Kodilla/Czat/node_modules/fbjs/lib/hyphenateStyleName.js');
-  reactHotLoader.register(hyphenateStyleName, 'hyphenateStyleName', 'I:/Kodilla/Czat/node_modules/fbjs/lib/hyphenateStyleName.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 63 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {
+
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -16114,12 +14523,6 @@ module.exports = hyphenateStyleName;
  *
  * @typechecks
  */
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 var _uppercasePattern = /([A-Z])/g;
 
@@ -16140,31 +14543,13 @@ function hyphenate(string) {
 }
 
 module.exports = hyphenate;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(_uppercasePattern, '_uppercasePattern', 'I:/Kodilla/Czat/node_modules/fbjs/lib/hyphenate.js');
-  reactHotLoader.register(hyphenate, 'hyphenate', 'I:/Kodilla/Czat/node_modules/fbjs/lib/hyphenate.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 64 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/**
+/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
@@ -16175,13 +14560,7 @@ module.exports = hyphenate;
 
 
 
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-var camelize = __webpack_require__(65);
+var camelize = __webpack_require__(64);
 
 var msPattern = /^-ms-/;
 
@@ -16207,31 +14586,13 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(msPattern, 'msPattern', 'I:/Kodilla/Czat/node_modules/fbjs/lib/camelizeStyleName.js');
-  reactHotLoader.register(camelizeStyleName, 'camelizeStyleName', 'I:/Kodilla/Czat/node_modules/fbjs/lib/camelizeStyleName.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 65 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {
+
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -16241,12 +14602,6 @@ module.exports = camelizeStyleName;
  *
  * @typechecks
  */
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 var _hyphenPattern = /-(.)/g;
 
@@ -16266,47 +14621,25 @@ function camelize(string) {
 }
 
 module.exports = camelize;
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(_hyphenPattern, "_hyphenPattern", "I:/Kodilla/Czat/node_modules/fbjs/lib/camelize.js");
-  reactHotLoader.register(camelize, "camelize", "I:/Kodilla/Czat/node_modules/fbjs/lib/camelize.js");
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 66 */
+/* 65 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_socket_io_client__ = __webpack_require__(67);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_socket_io_client___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_socket_io_client__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__App_css__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__App_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__App_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MessageForm__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__MessageList__ = __webpack_require__(93);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__UsersList__ = __webpack_require__(96);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__UserForm__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_hot_loader__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_hot_loader___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_hot_loader__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_socket_io_client__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_socket_io_client___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_socket_io_client__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__App_css__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__App_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__App_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__MessageForm__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__MessageList__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__UsersList__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__UserForm__ = __webpack_require__(100);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
@@ -16325,8 +14658,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-
-var socket = __WEBPACK_IMPORTED_MODULE_1_socket_io_client___default()("/");
+var socket = __WEBPACK_IMPORTED_MODULE_2_socket_io_client___default()("/");
 
 var App = function (_Component) {
   _inherits(App, _Component);
@@ -16349,14 +14681,21 @@ var App = function (_Component) {
         return _this2.messageReceive(message);
       });
       socket.on("update", function (_ref) {
-        var users = _ref.users;
-        return _this2.chatUpdate(users);
+        var users = _ref.users,
+            message = _ref.message;
+
+        _this2.chatUpdate(users);
+        _this2.messageReceive(message);
+      });
+      socket.on("getMessages", function (_ref2) {
+        var messages = _ref2.messages;
+        return _this2.messageReceive(messages);
       });
     }
   }, {
     key: "messageReceive",
     value: function messageReceive(message) {
-      var messages = [message].concat(_toConsumableArray(this.state.messages));
+      var messages = [].concat(_toConsumableArray(this.state.messages), _toConsumableArray(message));
       this.setState({ messages: messages });
     }
   }, {
@@ -16367,7 +14706,7 @@ var App = function (_Component) {
   }, {
     key: "handleMessageSubmit",
     value: function handleMessageSubmit(message) {
-      var messages = [message].concat(_toConsumableArray(this.state.messages));
+      var messages = [].concat(_toConsumableArray(this.state.messages), [message]);
       this.setState({ messages: messages });
       socket.emit("message", message);
     }
@@ -16378,41 +14717,40 @@ var App = function (_Component) {
       socket.emit("join", name);
     }
   }, {
-    key: "render",
-    value: function render() {
-      return this.state.name !== "" ? this.renderLayout() : this.renderUserForm();
-    }
-  }, {
     key: "renderLayout",
     value: function renderLayout() {
       var _this3 = this;
 
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         "div",
-        { className: __WEBPACK_IMPORTED_MODULE_2__App_css___default.a.App },
+        { className: __WEBPACK_IMPORTED_MODULE_3__App_css___default.a.App },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           "div",
-          { className: __WEBPACK_IMPORTED_MODULE_2__App_css___default.a.AppHeader },
+          { className: __WEBPACK_IMPORTED_MODULE_3__App_css___default.a.AppHeader },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             "div",
-            { className: __WEBPACK_IMPORTED_MODULE_2__App_css___default.a.AppTitle },
+            { className: __WEBPACK_IMPORTED_MODULE_3__App_css___default.a.AppTitle },
             "ChatApp"
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             "div",
-            { className: __WEBPACK_IMPORTED_MODULE_2__App_css___default.a.AppRoom },
-            "App room"
+            { className: __WEBPACK_IMPORTED_MODULE_3__App_css___default.a.AppRoom },
+            "Hello ",
+            this.state.name
           )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           "div",
-          { className: __WEBPACK_IMPORTED_MODULE_2__App_css___default.a.AppBody },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__UsersList__["a" /* default */], { users: this.state.users }),
+          { className: __WEBPACK_IMPORTED_MODULE_3__App_css___default.a.AppBody },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__UsersList__["a" /* default */], { users: this.state.users }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             "div",
-            { className: __WEBPACK_IMPORTED_MODULE_2__App_css___default.a.MessageWrapper },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__MessageList__["a" /* default */], { messages: this.state.messages }),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__MessageForm__["a" /* default */], {
+            { className: __WEBPACK_IMPORTED_MODULE_3__App_css___default.a.MessageWrapper },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__MessageList__["a" /* default */], {
+              messages: this.state.messages,
+              name: this.state.name
+            }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__MessageForm__["a" /* default */], {
               onMessageSubmit: function onMessageSubmit(message) {
                 return _this3.handleMessageSubmit(message);
               },
@@ -16427,64 +14765,36 @@ var App = function (_Component) {
     value: function renderUserForm() {
       var _this4 = this;
 
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__UserForm__["a" /* default */], { onUserSubmit: function onUserSubmit(name) {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__UserForm__["a" /* default */], { onUserSubmit: function onUserSubmit(name) {
           return _this4.handleUserSubmit(name);
         } });
     }
   }, {
-    key: "__reactstandin__regenerateByEval",
-    value: function __reactstandin__regenerateByEval(key, code) {
-      this[key] = eval(code);
+    key: "render",
+    value: function render() {
+      return this.state.name !== "" ? this.renderLayout() : this.renderUserForm();
     }
   }]);
 
   return App;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-var _default = App;
-
-
-/* harmony default export */ __webpack_exports__["a"] = (_default);
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(socket, "socket", "I:/Kodilla/Czat/client/App.js");
-  reactHotLoader.register(App, "App", "I:/Kodilla/Czat/client/App.js");
-  reactHotLoader.register(_default, "default", "I:/Kodilla/Czat/client/App.js");
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(7)(module)))
+/* harmony default export */ __webpack_exports__["a"] = (App);
 
 /***/ }),
-/* 67 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /**
  * Module dependencies.
  */
 
-var url = __webpack_require__(68);
-var parser = __webpack_require__(23);
-var Manager = __webpack_require__(34);
-var debug = __webpack_require__(13)('socket.io-client');
+var url = __webpack_require__(67);
+var parser = __webpack_require__(20);
+var Manager = __webpack_require__(33);
+var debug = __webpack_require__(12)('socket.io-client');
 
 /**
  * Module exports.
@@ -16567,44 +14877,20 @@ exports.connect = lookup;
  * @api public
  */
 
-exports.Manager = __webpack_require__(34);
-exports.Socket = __webpack_require__(40);
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(debug, 'debug', 'I:/Kodilla/Czat/node_modules/socket.io-client/lib/index.js');
-  reactHotLoader.register(cache, 'cache', 'I:/Kodilla/Czat/node_modules/socket.io-client/lib/index.js');
-  reactHotLoader.register(lookup, 'lookup', 'I:/Kodilla/Czat/node_modules/socket.io-client/lib/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
+exports.Manager = __webpack_require__(33);
+exports.Socket = __webpack_require__(39);
 
 /***/ }),
-/* 68 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, global) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
+/* WEBPACK VAR INJECTION */(function(global) {
 /**
  * Module dependencies.
  */
 
-var parseuri = __webpack_require__(32);
-var debug = __webpack_require__(13)('socket.io-client:url');
+var parseuri = __webpack_require__(31);
+var debug = __webpack_require__(12)('socket.io-client:url');
 
 /**
  * Module exports.
@@ -16673,34 +14959,12 @@ function url(uri, loc) {
 
   return obj;
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(debug, 'debug', 'I:/Kodilla/Czat/node_modules/socket.io-client/lib/url.js');
-  reactHotLoader.register(url, 'url', 'I:/Kodilla/Czat/node_modules/socket.io-client/lib/url.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 69 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 /**
  * This is the common logic for both the Node.js and web browser
@@ -16714,7 +14978,7 @@ exports.coerce = coerce;
 exports.disable = disable;
 exports.enable = enable;
 exports.enabled = enabled;
-exports.humanize = __webpack_require__(22);
+exports.humanize = __webpack_require__(19);
 
 /**
  * Active `debug` instances.
@@ -16927,41 +15191,12 @@ function coerce(val) {
   if (val instanceof Error) return val.stack || val.message;
   return val;
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(selectColor, 'selectColor', 'I:/Kodilla/Czat/node_modules/socket.io-client/node_modules/debug/src/debug.js');
-  reactHotLoader.register(createDebug, 'createDebug', 'I:/Kodilla/Czat/node_modules/socket.io-client/node_modules/debug/src/debug.js');
-  reactHotLoader.register(destroy, 'destroy', 'I:/Kodilla/Czat/node_modules/socket.io-client/node_modules/debug/src/debug.js');
-  reactHotLoader.register(enable, 'enable', 'I:/Kodilla/Czat/node_modules/socket.io-client/node_modules/debug/src/debug.js');
-  reactHotLoader.register(disable, 'disable', 'I:/Kodilla/Czat/node_modules/socket.io-client/node_modules/debug/src/debug.js');
-  reactHotLoader.register(enabled, 'enabled', 'I:/Kodilla/Czat/node_modules/socket.io-client/node_modules/debug/src/debug.js');
-  reactHotLoader.register(coerce, 'coerce', 'I:/Kodilla/Czat/node_modules/socket.io-client/node_modules/debug/src/debug.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 70 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, process) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+/* WEBPACK VAR INJECTION */(function(process) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /**
  * This is the web browser implementation of `debug()`.
@@ -16969,7 +15204,7 @@ function coerce(val) {
  * Expose `debug()` as the module.
  */
 
-exports = module.exports = __webpack_require__(71);
+exports = module.exports = __webpack_require__(70);
 exports.log = log;
 exports.formatArgs = formatArgs;
 exports.save = save;
@@ -17135,38 +15370,12 @@ function localstorage() {
     return window.localStorage;
   } catch (e) {}
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(useColors, 'useColors', 'I:/Kodilla/Czat/node_modules/socket.io-parser/node_modules/debug/src/browser.js');
-  reactHotLoader.register(formatArgs, 'formatArgs', 'I:/Kodilla/Czat/node_modules/socket.io-parser/node_modules/debug/src/browser.js');
-  reactHotLoader.register(log, 'log', 'I:/Kodilla/Czat/node_modules/socket.io-parser/node_modules/debug/src/browser.js');
-  reactHotLoader.register(save, 'save', 'I:/Kodilla/Czat/node_modules/socket.io-parser/node_modules/debug/src/browser.js');
-  reactHotLoader.register(load, 'load', 'I:/Kodilla/Czat/node_modules/socket.io-parser/node_modules/debug/src/browser.js');
-  reactHotLoader.register(localstorage, 'localstorage', 'I:/Kodilla/Czat/node_modules/socket.io-parser/node_modules/debug/src/browser.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 71 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 /**
  * This is the common logic for both the Node.js and web browser
@@ -17180,7 +15389,7 @@ exports.coerce = coerce;
 exports.disable = disable;
 exports.enable = enable;
 exports.enabled = enabled;
-exports.humanize = __webpack_require__(22);
+exports.humanize = __webpack_require__(19);
 
 /**
  * Active `debug` instances.
@@ -17393,41 +15602,12 @@ function coerce(val) {
   if (val instanceof Error) return val.stack || val.message;
   return val;
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(selectColor, 'selectColor', 'I:/Kodilla/Czat/node_modules/socket.io-parser/node_modules/debug/src/debug.js');
-  reactHotLoader.register(createDebug, 'createDebug', 'I:/Kodilla/Czat/node_modules/socket.io-parser/node_modules/debug/src/debug.js');
-  reactHotLoader.register(destroy, 'destroy', 'I:/Kodilla/Czat/node_modules/socket.io-parser/node_modules/debug/src/debug.js');
-  reactHotLoader.register(enable, 'enable', 'I:/Kodilla/Czat/node_modules/socket.io-parser/node_modules/debug/src/debug.js');
-  reactHotLoader.register(disable, 'disable', 'I:/Kodilla/Czat/node_modules/socket.io-parser/node_modules/debug/src/debug.js');
-  reactHotLoader.register(enabled, 'enabled', 'I:/Kodilla/Czat/node_modules/socket.io-parser/node_modules/debug/src/debug.js');
-  reactHotLoader.register(coerce, 'coerce', 'I:/Kodilla/Czat/node_modules/socket.io-parser/node_modules/debug/src/debug.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 72 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, global) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+/* WEBPACK VAR INJECTION */(function(global) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /*global Blob,File*/
 
@@ -17435,8 +15615,8 @@ function coerce(val) {
  * Module requirements
  */
 
-var isArray = __webpack_require__(24);
-var isBuf = __webpack_require__(33);
+var isArray = __webpack_require__(21);
+var isBuf = __webpack_require__(32);
 var toString = Object.prototype.toString;
 var withNativeBlob = typeof global.Blob === 'function' || toString.call(global.Blob) === '[object BlobConstructor]';
 var withNativeFile = typeof global.File === 'function' || toString.call(global.File) === '[object FileConstructor]';
@@ -17571,34 +15751,14 @@ exports.removeBlobs = function (data, callback) {
     callback(bloblessData);
   }
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(toString, 'toString', 'I:/Kodilla/Czat/node_modules/socket.io-parser/binary.js');
-  reactHotLoader.register(withNativeBlob, 'withNativeBlob', 'I:/Kodilla/Czat/node_modules/socket.io-parser/binary.js');
-  reactHotLoader.register(withNativeFile, 'withNativeFile', 'I:/Kodilla/Czat/node_modules/socket.io-parser/binary.js');
-  reactHotLoader.register(_deconstructPacket, '_deconstructPacket', 'I:/Kodilla/Czat/node_modules/socket.io-parser/binary.js');
-  reactHotLoader.register(_reconstructPacket, '_reconstructPacket', 'I:/Kodilla/Czat/node_modules/socket.io-parser/binary.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 73 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-module.exports = __webpack_require__(74);
+module.exports = __webpack_require__(73);
 
 /**
  * Exports parser
@@ -17606,31 +15766,25 @@ module.exports = __webpack_require__(74);
  * @api public
  *
  */
-module.exports.parser = __webpack_require__(9);
+module.exports.parser = __webpack_require__(6);
 
 /***/ }),
-/* 74 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, global) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+/* WEBPACK VAR INJECTION */(function(global) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 /**
  * Module dependencies.
  */
 
-var transports = __webpack_require__(35);
-var Emitter = __webpack_require__(8);
-var debug = __webpack_require__(16)('engine.io-client:socket');
-var index = __webpack_require__(39);
-var parser = __webpack_require__(9);
-var parseuri = __webpack_require__(32);
-var parseqs = __webpack_require__(14);
+var transports = __webpack_require__(34);
+var Emitter = __webpack_require__(5);
+var debug = __webpack_require__(15)('engine.io-client:socket');
+var index = __webpack_require__(38);
+var parser = __webpack_require__(6);
+var parseuri = __webpack_require__(31);
+var parseqs = __webpack_require__(13);
 
 /**
  * Module exports.
@@ -17759,9 +15913,9 @@ Socket.protocol = parser.protocol; // this is an int
  */
 
 Socket.Socket = Socket;
-Socket.Transport = __webpack_require__(26);
-Socket.transports = __webpack_require__(35);
-Socket.parser = __webpack_require__(9);
+Socket.Transport = __webpack_require__(23);
+Socket.transports = __webpack_require__(34);
+Socket.parser = __webpack_require__(6);
 
 /**
  * Creates transport of the given type.
@@ -18352,28 +16506,10 @@ Socket.prototype.filterUpgrades = function (upgrades) {
   }
   return filteredUpgrades;
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(debug, 'debug', 'I:/Kodilla/Czat/node_modules/engine.io-client/lib/socket.js');
-  reactHotLoader.register(Socket, 'Socket', 'I:/Kodilla/Czat/node_modules/engine.io-client/lib/socket.js');
-  reactHotLoader.register(clone, 'clone', 'I:/Kodilla/Czat/node_modules/engine.io-client/lib/socket.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 75 */
+/* 74 */
 /***/ (function(module, exports) {
 
 
@@ -18394,24 +16530,18 @@ try {
 }
 
 /***/ }),
-/* 76 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, global) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-/**
+/* WEBPACK VAR INJECTION */(function(global) {/**
  * Module requirements.
  */
 
-var XMLHttpRequest = __webpack_require__(25);
-var Polling = __webpack_require__(36);
-var Emitter = __webpack_require__(8);
-var inherit = __webpack_require__(15);
-var debug = __webpack_require__(16)('engine.io-client:polling-xhr');
+var XMLHttpRequest = __webpack_require__(22);
+var Polling = __webpack_require__(35);
+var Emitter = __webpack_require__(5);
+var inherit = __webpack_require__(14);
+var debug = __webpack_require__(15)('engine.io-client:polling-xhr');
 
 /**
  * Module exports.
@@ -18814,30 +16944,10 @@ function unloadHandler() {
     }
   }
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(debug, 'debug', 'I:/Kodilla/Czat/node_modules/engine.io-client/lib/transports/polling-xhr.js');
-  reactHotLoader.register(empty, 'empty', 'I:/Kodilla/Czat/node_modules/engine.io-client/lib/transports/polling-xhr.js');
-  reactHotLoader.register(XHR, 'XHR', 'I:/Kodilla/Czat/node_modules/engine.io-client/lib/transports/polling-xhr.js');
-  reactHotLoader.register(Request, 'Request', 'I:/Kodilla/Czat/node_modules/engine.io-client/lib/transports/polling-xhr.js');
-  reactHotLoader.register(unloadHandler, 'unloadHandler', 'I:/Kodilla/Czat/node_modules/engine.io-client/lib/transports/polling-xhr.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 77 */
+/* 76 */
 /***/ (function(module, exports) {
 
 
@@ -18861,7 +16971,7 @@ module.exports = Object.keys || function keys(obj) {
 };
 
 /***/ }),
-/* 78 */
+/* 77 */
 /***/ (function(module, exports) {
 
 /**
@@ -18903,14 +17013,8 @@ module.exports = function (arraybuffer, start, end) {
 };
 
 /***/ }),
-/* 79 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-    var enterModule = __webpack_require__(0).enterModule;
-
-    enterModule && enterModule(module);
-})();
+/* 78 */
+/***/ (function(module, exports) {
 
 module.exports = after;
 
@@ -18940,27 +17044,9 @@ function after(count, callback, err_cb) {
 }
 
 function noop() {}
-;
-
-(function () {
-    var reactHotLoader = __webpack_require__(0).default;
-
-    var leaveModule = __webpack_require__(0).leaveModule;
-
-    if (!reactHotLoader) {
-        return;
-    }
-
-    reactHotLoader.register(after, 'after', 'I:/Kodilla/Czat/node_modules/after/index.js');
-    reactHotLoader.register(noop, 'noop', 'I:/Kodilla/Czat/node_modules/after/index.js');
-    leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 80 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module, global) {var __WEBPACK_AMD_DEFINE_RESULT__;var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -19195,7 +17281,7 @@ function noop() {}
 
 	// Some AMD build optimizers, like r.js, check for specific condition patterns
 	// like the following:
-	if ("function" == 'function' && _typeof(__webpack_require__(21)) == 'object' && __webpack_require__(21)) {
+	if ("function" == 'function' && _typeof(__webpack_require__(18)) == 'object' && __webpack_require__(18)) {
 		!(__WEBPACK_AMD_DEFINE_RESULT__ = (function () {
 			return utf8;
 		}).call(exports, __webpack_require__, exports, module),
@@ -19217,10 +17303,10 @@ function noop() {}
 		root.utf8 = utf8;
 	}
 })(this);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)(module), __webpack_require__(1)))
 
 /***/ }),
-/* 81 */
+/* 80 */
 /***/ (function(module, exports) {
 
 /*
@@ -19299,16 +17385,10 @@ function noop() {}
 })();
 
 /***/ }),
-/* 82 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, global) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-/**
+/* WEBPACK VAR INJECTION */(function(global) {/**
  * Create a blob builder even when vendor prefixes exist
  */
 
@@ -19399,39 +17479,12 @@ module.exports = function () {
     return undefined;
   }
 }();
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(BlobBuilder, 'BlobBuilder', 'I:/Kodilla/Czat/node_modules/blob/index.js');
-  reactHotLoader.register(blobSupported, 'blobSupported', 'I:/Kodilla/Czat/node_modules/blob/index.js');
-  reactHotLoader.register(blobSupportsArrayBufferView, 'blobSupportsArrayBufferView', 'I:/Kodilla/Czat/node_modules/blob/index.js');
-  reactHotLoader.register(blobBuilderSupported, 'blobBuilderSupported', 'I:/Kodilla/Czat/node_modules/blob/index.js');
-  reactHotLoader.register(mapArrayBufferViews, 'mapArrayBufferViews', 'I:/Kodilla/Czat/node_modules/blob/index.js');
-  reactHotLoader.register(BlobBuilderConstructor, 'BlobBuilderConstructor', 'I:/Kodilla/Czat/node_modules/blob/index.js');
-  reactHotLoader.register(BlobConstructor, 'BlobConstructor', 'I:/Kodilla/Czat/node_modules/blob/index.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 83 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 /**
  * This is the common logic for both the Node.js and web browser
@@ -19445,7 +17498,7 @@ exports.coerce = coerce;
 exports.disable = disable;
 exports.enable = enable;
 exports.enabled = enabled;
-exports.humanize = __webpack_require__(22);
+exports.humanize = __webpack_require__(19);
 
 /**
  * Active `debug` instances.
@@ -19658,46 +17711,18 @@ function coerce(val) {
   if (val instanceof Error) return val.stack || val.message;
   return val;
 }
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(selectColor, 'selectColor', 'I:/Kodilla/Czat/node_modules/engine.io-client/node_modules/debug/src/debug.js');
-  reactHotLoader.register(createDebug, 'createDebug', 'I:/Kodilla/Czat/node_modules/engine.io-client/node_modules/debug/src/debug.js');
-  reactHotLoader.register(destroy, 'destroy', 'I:/Kodilla/Czat/node_modules/engine.io-client/node_modules/debug/src/debug.js');
-  reactHotLoader.register(enable, 'enable', 'I:/Kodilla/Czat/node_modules/engine.io-client/node_modules/debug/src/debug.js');
-  reactHotLoader.register(disable, 'disable', 'I:/Kodilla/Czat/node_modules/engine.io-client/node_modules/debug/src/debug.js');
-  reactHotLoader.register(enabled, 'enabled', 'I:/Kodilla/Czat/node_modules/engine.io-client/node_modules/debug/src/debug.js');
-  reactHotLoader.register(coerce, 'coerce', 'I:/Kodilla/Czat/node_modules/engine.io-client/node_modules/debug/src/debug.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 84 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, global) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
+/* WEBPACK VAR INJECTION */(function(global) {
 /**
  * Module requirements.
  */
 
-var Polling = __webpack_require__(36);
-var inherit = __webpack_require__(15);
+var Polling = __webpack_require__(35);
+var inherit = __webpack_require__(14);
 
 /**
  * Module exports.
@@ -19922,53 +17947,27 @@ JSONPPolling.prototype.doWrite = function (data, fn) {
     this.iframe.onload = complete;
   }
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(rNewline, 'rNewline', 'I:/Kodilla/Czat/node_modules/engine.io-client/lib/transports/polling-jsonp.js');
-  reactHotLoader.register(rEscapedNewline, 'rEscapedNewline', 'I:/Kodilla/Czat/node_modules/engine.io-client/lib/transports/polling-jsonp.js');
-  reactHotLoader.register(callbacks, 'callbacks', 'I:/Kodilla/Czat/node_modules/engine.io-client/lib/transports/polling-jsonp.js');
-  reactHotLoader.register(empty, 'empty', 'I:/Kodilla/Czat/node_modules/engine.io-client/lib/transports/polling-jsonp.js');
-  reactHotLoader.register(JSONPPolling, 'JSONPPolling', 'I:/Kodilla/Czat/node_modules/engine.io-client/lib/transports/polling-jsonp.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 85 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module, global) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
-/**
+/* WEBPACK VAR INJECTION */(function(global) {/**
  * Module dependencies.
  */
 
-var Transport = __webpack_require__(26);
-var parser = __webpack_require__(9);
-var parseqs = __webpack_require__(14);
-var inherit = __webpack_require__(15);
-var yeast = __webpack_require__(38);
-var debug = __webpack_require__(16)('engine.io-client:websocket');
+var Transport = __webpack_require__(23);
+var parser = __webpack_require__(6);
+var parseqs = __webpack_require__(13);
+var inherit = __webpack_require__(14);
+var yeast = __webpack_require__(37);
+var debug = __webpack_require__(15)('engine.io-client:websocket');
 var BrowserWebSocket = global.WebSocket || global.MozWebSocket;
 var NodeWebSocket;
 if (typeof window === 'undefined') {
   try {
-    NodeWebSocket = __webpack_require__(86);
+    NodeWebSocket = __webpack_require__(85);
   } catch (e) {}
 }
 
@@ -20239,43 +18238,17 @@ WS.prototype.uri = function () {
 WS.prototype.check = function () {
   return !!WebSocket && !('__initialize' in WebSocket && this.name === WS.prototype.name);
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(debug, 'debug', 'I:/Kodilla/Czat/node_modules/engine.io-client/lib/transports/websocket.js');
-  reactHotLoader.register(BrowserWebSocket, 'BrowserWebSocket', 'I:/Kodilla/Czat/node_modules/engine.io-client/lib/transports/websocket.js');
-  reactHotLoader.register(NodeWebSocket, 'NodeWebSocket', 'I:/Kodilla/Czat/node_modules/engine.io-client/lib/transports/websocket.js');
-  reactHotLoader.register(WebSocket, 'WebSocket', 'I:/Kodilla/Czat/node_modules/engine.io-client/lib/transports/websocket.js');
-  reactHotLoader.register(WS, 'WS', 'I:/Kodilla/Czat/node_modules/engine.io-client/lib/transports/websocket.js');
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module), __webpack_require__(3)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 86 */
+/* 85 */
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
 /***/ }),
-/* 87 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-    var enterModule = __webpack_require__(0).enterModule;
-
-    enterModule && enterModule(module);
-})();
+/* 86 */
+/***/ (function(module, exports) {
 
 module.exports = toArray;
 
@@ -20290,33 +18263,11 @@ function toArray(list, index) {
 
     return array;
 }
-;
-
-(function () {
-    var reactHotLoader = __webpack_require__(0).default;
-
-    var leaveModule = __webpack_require__(0).leaveModule;
-
-    if (!reactHotLoader) {
-        return;
-    }
-
-    reactHotLoader.register(toArray, "toArray", "I:/Kodilla/Czat/node_modules/to-array/index.js");
-    leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 88 */
-/***/ (function(module, exports, __webpack_require__) {
+/* 87 */
+/***/ (function(module, exports) {
 
-/* WEBPACK VAR INJECTION */(function(module) {(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 /**
  * Expose `Backoff`.
@@ -20401,30 +18352,13 @@ Backoff.prototype.setMax = function (max) {
 Backoff.prototype.setJitter = function (jitter) {
   this.jitter = jitter;
 };
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(Backoff, "Backoff", "I:/Kodilla/Czat/node_modules/backo2/index.js");
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
 
 /***/ }),
-/* 89 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(90);
+var content = __webpack_require__(89);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -20438,7 +18372,7 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(18)(content, options);
+var update = __webpack_require__(9)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
@@ -20470,10 +18404,10 @@ if(false) {
 }
 
 /***/ }),
-/* 90 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(17)(false);
+exports = module.exports = __webpack_require__(8)(false);
 // imports
 
 
@@ -20491,7 +18425,7 @@ exports.locals = {
 };
 
 /***/ }),
-/* 91 */
+/* 90 */
 /***/ (function(module, exports) {
 
 
@@ -20584,23 +18518,25 @@ module.exports = function (css) {
 };
 
 /***/ }),
-/* 92 */
+/* 91 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__MessageForm_css__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__MessageForm_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__MessageForm_css__);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
 
 var MessageForm = function (_Component) {
   _inherits(MessageForm, _Component);
@@ -20622,6 +18558,7 @@ var MessageForm = function (_Component) {
         from: this.props.name,
         text: this.state.text
       };
+
       this.props.onMessageSubmit(message);
       this.setState({ text: "" });
     }
@@ -20635,13 +18572,13 @@ var MessageForm = function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      return React.createElement(
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         "form",
-        { className: styles.MessageForm, onSubmit: function onSubmit(e) {
+        { className: __WEBPACK_IMPORTED_MODULE_1__MessageForm_css___default.a.MessageForm, onSubmit: function onSubmit(e) {
             return _this2.handleSubmit(e);
           } },
-        React.createElement("input", {
-          className: styles.MessageInput,
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", {
+          className: __WEBPACK_IMPORTED_MODULE_1__MessageForm_css___default.a.MessageInput,
           onChange: function onChange(e) {
             return _this2.changeHandler(e);
           },
@@ -20650,54 +18587,89 @@ var MessageForm = function (_Component) {
         })
       );
     }
-  }, {
-    key: "__reactstandin__regenerateByEval",
-    value: function __reactstandin__regenerateByEval(key, code) {
-      this[key] = eval(code);
-    }
   }]);
 
   return MessageForm;
-}(Component);
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-var _default = MessageForm;
+/* harmony default export */ __webpack_exports__["a"] = (MessageForm);
+
+/***/ }),
+/* 92 */
+/***/ (function(module, exports, __webpack_require__) {
 
 
-/* harmony default export */ __webpack_exports__["a"] = (_default);
-;
+var content = __webpack_require__(93);
 
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
+if(typeof content === 'string') content = [[module.i, content, '']];
 
-  var leaveModule = __webpack_require__(0).leaveModule;
+var transform;
+var insertInto;
 
-  if (!reactHotLoader) {
-    return;
-  }
 
-  reactHotLoader.register(MessageForm, "MessageForm", "I:/Kodilla/Czat/client/MessageForm.js");
-  reactHotLoader.register(_default, "default", "I:/Kodilla/Czat/client/MessageForm.js");
-  leaveModule(module);
-})();
 
-;
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(7)(module)))
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(9)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {
+	module.hot.accept("!!../node_modules/css-loader/index.js??ref--1-1!./MessageForm.css", function() {
+		var newContent = require("!!../node_modules/css-loader/index.js??ref--1-1!./MessageForm.css");
+
+		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
 
 /***/ }),
 /* 93 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(8)(false);
+// imports
+
+
+// module
+exports.push([module.i, "._1jMi-csxQtX0aGs1vYDoVW {\n    display: flex;\n    flex-direction: row;\n}\n\n._2CwExyCf7HbiY7VMTFtGOz {\n    flex: 1;\n    padding: 20px;\n    border: 0;\n    border-top: 1px solid #ccc;\n}", ""]);
+
+// exports
+exports.locals = {
+	"MessageForm": "_1jMi-csxQtX0aGs1vYDoVW",
+	"MessageInput": "_2CwExyCf7HbiY7VMTFtGOz"
+};
+
+/***/ }),
+/* 94 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__MessageList_css__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__MessageList_css__ = __webpack_require__(95);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__MessageList_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__MessageList_css__);
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
 
 
 
@@ -20729,34 +18701,14 @@ var MessageList = function MessageList(props) {
   );
 };
 
-var _default = MessageList;
-/* harmony default export */ __webpack_exports__["a"] = (_default);
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(Message, "Message", "I:/Kodilla/Czat/client/MessageList.js");
-  reactHotLoader.register(MessageList, "MessageList", "I:/Kodilla/Czat/client/MessageList.js");
-  reactHotLoader.register(_default, "default", "I:/Kodilla/Czat/client/MessageList.js");
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(7)(module)))
+/* harmony default export */ __webpack_exports__["a"] = (MessageList);
 
 /***/ }),
-/* 94 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(95);
+var content = __webpack_require__(96);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -20770,7 +18722,7 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(18)(content, options);
+var update = __webpack_require__(9)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
@@ -20802,10 +18754,10 @@ if(false) {
 }
 
 /***/ }),
-/* 95 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(17)(false);
+exports = module.exports = __webpack_require__(8)(false);
 // imports
 
 
@@ -20818,20 +18770,14 @@ exports.locals = {
 };
 
 /***/ }),
-/* 96 */
+/* 97 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__UsersList_css__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__UsersList_css__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__UsersList_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__UsersList_css__);
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
-
 
 
 
@@ -20860,33 +18806,14 @@ var UsersList = function UsersList(props) {
   );
 };
 
-var _default = UsersList;
-/* harmony default export */ __webpack_exports__["a"] = (_default);
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(UsersList, "UsersList", "I:/Kodilla/Czat/client/UsersList.js");
-  reactHotLoader.register(_default, "default", "I:/Kodilla/Czat/client/UsersList.js");
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(7)(module)))
+/* harmony default export */ __webpack_exports__["a"] = (UsersList);
 
 /***/ }),
-/* 97 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(98);
+var content = __webpack_require__(99);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -20900,7 +18827,7 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(18)(content, options);
+var update = __webpack_require__(9)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
@@ -20932,10 +18859,10 @@ if(false) {
 }
 
 /***/ }),
-/* 98 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(17)(false);
+exports = module.exports = __webpack_require__(8)(false);
 // imports
 
 
@@ -20951,21 +18878,15 @@ exports.locals = {
 };
 
 /***/ }),
-/* 99 */
+/* 100 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__UserForm_css__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__UserForm_css__ = __webpack_require__(101);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__UserForm_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__UserForm_css__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-(function () {
-  var enterModule = __webpack_require__(0).enterModule;
-
-  enterModule && enterModule(module);
-})();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -21020,45 +18941,19 @@ var UserForm = function (_Component) {
         })
       );
     }
-  }, {
-    key: "__reactstandin__regenerateByEval",
-    value: function __reactstandin__regenerateByEval(key, code) {
-      this[key] = eval(code);
-    }
   }]);
 
   return UserForm;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-var _default = UserForm;
-
-
-/* harmony default export */ __webpack_exports__["a"] = (_default);
-;
-
-(function () {
-  var reactHotLoader = __webpack_require__(0).default;
-
-  var leaveModule = __webpack_require__(0).leaveModule;
-
-  if (!reactHotLoader) {
-    return;
-  }
-
-  reactHotLoader.register(UserForm, "UserForm", "I:/Kodilla/Czat/client/UserForm.js");
-  reactHotLoader.register(_default, "default", "I:/Kodilla/Czat/client/UserForm.js");
-  leaveModule(module);
-})();
-
-;
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(7)(module)))
+/* harmony default export */ __webpack_exports__["a"] = (UserForm);
 
 /***/ }),
-/* 100 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(101);
+var content = __webpack_require__(102);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -21072,7 +18967,7 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(18)(content, options);
+var update = __webpack_require__(9)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
@@ -21104,10 +18999,10 @@ if(false) {
 }
 
 /***/ }),
-/* 101 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(17)(false);
+exports = module.exports = __webpack_require__(8)(false);
 // imports
 
 

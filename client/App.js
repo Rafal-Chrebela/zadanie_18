@@ -1,8 +1,7 @@
 import React, { Component } from "react";
+import { hot } from "react-hot-loader";
 import io from "socket.io-client";
-
 import styles from "./App.css";
-
 import MessageForm from "./MessageForm";
 import MessageList from "./MessageList";
 import UsersList from "./UsersList";
@@ -18,11 +17,15 @@ class App extends Component {
 
   componentDidMount() {
     socket.on("message", message => this.messageReceive(message));
-    socket.on("update", ({ users }) => this.chatUpdate(users));
+    socket.on("update", ({ users, message }) => {
+      this.chatUpdate(users);
+      this.messageReceive(message);
+    });
+    socket.on("getMessages", ({ messages }) => this.messageReceive(messages));
   }
 
   messageReceive(message) {
-    const messages = [message, ...this.state.messages];
+    const messages = [...this.state.messages, ...message];
     this.setState({ messages });
   }
 
@@ -31,7 +34,7 @@ class App extends Component {
   }
 
   handleMessageSubmit(message) {
-    const messages = [message, ...this.state.messages];
+    const messages = [...this.state.messages, message];
     this.setState({ messages });
     socket.emit("message", message);
   }
@@ -41,21 +44,20 @@ class App extends Component {
     socket.emit("join", name);
   }
 
-  render() {
-    return this.state.name !== "" ? this.renderLayout() : this.renderUserForm();
-  }
-
   renderLayout() {
     return (
       <div className={styles.App}>
         <div className={styles.AppHeader}>
           <div className={styles.AppTitle}>ChatApp</div>
-          <div className={styles.AppRoom}>App room</div>
+          <div className={styles.AppRoom}>Hello {this.state.name}</div>
         </div>
         <div className={styles.AppBody}>
           <UsersList users={this.state.users} />
           <div className={styles.MessageWrapper}>
-            <MessageList messages={this.state.messages} />
+            <MessageList
+              messages={this.state.messages}
+              name={this.state.name}
+            />
             <MessageForm
               onMessageSubmit={message => this.handleMessageSubmit(message)}
               name={this.state.name}
@@ -68,6 +70,10 @@ class App extends Component {
 
   renderUserForm() {
     return <UserForm onUserSubmit={name => this.handleUserSubmit(name)} />;
+  }
+
+  render() {
+    return this.state.name !== "" ? this.renderLayout() : this.renderUserForm();
   }
 }
 

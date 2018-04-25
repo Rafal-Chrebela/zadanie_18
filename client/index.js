@@ -1,15 +1,15 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDom from "react-dom";
 import { AppContainer } from "react-hot-loader";
 
 import App from "./App";
 
 const render = Component => {
-  ReactDOM.render(
+  ReactDom.render(
     <AppContainer>
       <Component />
     </AppContainer>,
-    document.getElementById("root")
+    document.getElementById("app")
   );
 };
 
