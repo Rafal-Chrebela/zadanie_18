@@ -19,12 +19,15 @@ class App extends Component {
     socket.on("message", message => this.messageReceive(message));
     socket.on("update", ({ users, message }) => {
       this.chatUpdate(users);
-      this.messageReceive(message);
+      if (message) {
+        this.messageReceive(message);
+      }
     });
     socket.on("getMessages", ({ messages }) => this.messageReceive(messages));
   }
 
   messageReceive(message) {
+    message = [message];
     const messages = [...this.state.messages, ...message];
     this.setState({ messages });
   }

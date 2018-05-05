@@ -14685,7 +14685,9 @@ var App = function (_Component) {
             message = _ref.message;
 
         _this2.chatUpdate(users);
-        _this2.messageReceive(message);
+        if (message) {
+          _this2.messageReceive(message);
+        }
       });
       socket.on("getMessages", function (_ref2) {
         var messages = _ref2.messages;
@@ -14695,6 +14697,7 @@ var App = function (_Component) {
   }, {
     key: "messageReceive",
     value: function messageReceive(message) {
+      message = [message];
       var messages = [].concat(_toConsumableArray(this.state.messages), _toConsumableArray(message));
       this.setState({ messages: messages });
     }
